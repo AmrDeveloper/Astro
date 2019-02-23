@@ -1,0 +1,9 @@
+.text-area {
+    -fx-font-size: 15;
+    -fx-text-fill: #f8f8f2;
+    -fx-display-caret:true;
+}
+
+.text-area .content {
+    -fx-background-color: #3c3f41;
+}

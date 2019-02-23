@@ -1,0 +1,46 @@
+.list-view{
+ -fx-background-color: #3c3f41;
+}
+
+.list-view .list-cell {
+ -fx-text-fill: #f8f8f2;
+ -fx-padding:5px;
+ -fx-background-color: #3c3f41;
+}
+
+.list-view .list-cell:filled:selected{
+  -fx-background-color: gray;
+}
+
+.list-view .list-cell:filled:hover{
+  -fx-background-color: gray;
+}
+
+.tree-view, .tree-cell {
+    -fx-background-color: #3c3f41;
+    -fx-text-fill: white ;
+}
+
+.tree-cell:expanded, .tree-cell:sub-tree-item {
+    -fx-background-color: #404040;
+}
+
+.tree-cell:selected {
+    -fx-font-weight: bold;
+    -fx-background-color: #585858;
+}
+
+.tree-cell {
+    -fx-padding: 0.25em 0em 0.25em 0em ;
+}
+.tree-cell:sub-tree-item {
+    -fx-padding: 0.1em ;
+}
+
+.tree-cell .tree-disclosure-node .arrow {
+    -fx-background-color: white;
+}
+
+.tree-cell:expanded .tree-disclosure-node .arrow {
+    -fx-background-color: white;
+}

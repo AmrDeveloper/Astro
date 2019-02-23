@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="astro.controller.NewFileController">
+    <Label layoutX="15.0" layoutY="23.0" text="Name : " />
+    <TextField fx:id="fileNameText" layoutX="73.0" layoutY="19.0" prefHeight="25.0" prefWidth="260.0" />
+    <Button fx:id="createButton" layoutX="215.0" layoutY="56.0" mnemonicParsing="false" text="Create" />
+    <Button fx:id="cancelButton" layoutX="281.0" layoutY="56.0" mnemonicParsing="false" text="Cancel" />
+</AnchorPane>

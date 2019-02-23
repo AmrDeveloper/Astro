@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+            minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="astro.controller.Controller">
+    <children>
+        <MenuBar accessibleRole="PARENT" layoutY="2.0" maxHeight="1.7976931348623157E308"
+                 maxWidth="1.7976931348623157E308" prefHeight="25.0" AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <Menu mnemonicParsing="false" text="New">
+                            <items>
+                                <MenuItem fx:id="newFileMenuItem" mnemonicParsing="false" text="New File"/>
+                                <MenuItem fx:id="newClassMenuItem1" mnemonicParsing="false" text="New Class"/>
+                                <MenuItem fx:id="newProjectMenuItem" mnemonicParsing="false" text="New Project"/>
+                            </items>
+                        </Menu>
+                        <MenuItem fx:id="openFileMenuItem" mnemonicParsing="false" text="Open File"/>
+                        <MenuItem fx:id="openFolderMenuItem" mnemonicParsing="false" text="Open Project"/>
+                        <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close Project"/>
+                        <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" text="Exit"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem fx:id="showFilesMenuAction" mnemonicParsing="false" text="Hide Files"/>
+                        <MenuItem fx:id="showResultMenuAction" mnemonicParsing="false" text="Hide Output"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <SplitPane fx:id="mainSplitPane" dividerPositions="0.18" layoutY="25.0" prefHeight="575.0" prefWidth="800.0"
+                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                   AnchorPane.topAnchor="25.0">
+            <items>
+                <AnchorPane fx:id="filesAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane dividerPositions="0.8" maxHeight="1.7976931348623157E308"
+                                   maxWidth="1.7976931348623157E308" orientation="VERTICAL"
+                                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <SplitPane dividerPositions="0.2" layoutY="7.0"
+                                                   maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                                   orientation="VERTICAL" AnchorPane.bottomAnchor="0.0"
+                                                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                                   AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0"
+                                                            prefWidth="160.0">
+                                                    <children>
+                                                        <ListView fx:id="openedFilesList"
+                                                                  maxHeight="1.7976931348623157E308"
+                                                                  maxWidth="1.7976931348623157E308"
+                                                                  AnchorPane.bottomAnchor="0.0"
+                                                                  AnchorPane.leftAnchor="0.0"
+                                                                  AnchorPane.rightAnchor="-0.0"
+                                                                  AnchorPane.topAnchor="0.0"/>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane maxHeight="1.7976931348623157E308"
+                                                            maxWidth="1.7976931348623157E308" minHeight="0.0"
+                                                            minWidth="0.0">
+                                                    <children>
+                                                        <TreeView fx:id="filesTreeView"
+                                                                  maxHeight="1.7976931348623157E308"
+                                                                  maxWidth="1.7976931348623157E308"
+                                                                  AnchorPane.bottomAnchor="0.0"
+                                                                  AnchorPane.leftAnchor="0.0"
+                                                                  AnchorPane.rightAnchor="-0.0"
+                                                                  AnchorPane.topAnchor="0.0"/>
+                                                    </children>
+                                                </AnchorPane>
+                                            </items>
+                                        </SplitPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TreeView fx:id="analysisTreeView" maxHeight="1.7976931348623157E308"
+                                                  maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0"
+                                                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                                  AnchorPane.topAnchor="0.0"/>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0"
+                            minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane fx:id="codeSplitPane" dividerPositions="0.8739054290718039"
+                                   maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                   orientation="VERTICAL" prefHeight="573.0" prefWidth="635.0"
+                                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                            minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TabPane fx:id="codeAreaLayout" maxHeight="1.7976931348623157E308"
+                                                 maxWidth="1.7976931348623157E308" tabClosingPolicy="UNAVAILABLE"
+                                                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TextArea fx:id="resultTextArea" maxHeight="1.7976931348623157E308"
+                                                  maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0"
+                                                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                                  AnchorPane.topAnchor="0.0"/>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
