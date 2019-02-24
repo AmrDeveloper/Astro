@@ -1,5 +1,5 @@
-# Astro 
-## Version 1.0.3
+# Astro (In Development)
+## Version 1.0.3 Beta
 Free and Open Source Java IDE
  
  
@@ -31,4 +31,4 @@ Free and Open Source Java IDE
 ### ![RichTextFX](https://github.com/FXMisc/RichTextFX)
 
 ## Demo
-### ![YouTube Video](https://www.youtube.com/watch?v=KAzhfJcP510)
+### [YouTube Video](https://www.youtube.com/watch?v=KAzhfJcP510)
