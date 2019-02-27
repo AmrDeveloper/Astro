@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/google-java-format-1.6-all-deps.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/richtextfx-fat-0.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/google-java-format-1.6-all-deps.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

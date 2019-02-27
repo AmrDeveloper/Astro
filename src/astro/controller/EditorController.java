@@ -241,7 +241,8 @@ class EditorController {
                         Platform.runLater(() -> {
                             codeTextArea.replaceText(position - query.length(), position, word);
                             if (SyntaxUtils.CLASSES_LIST.get(word) != null) {
-                                AutoImport.importClassPackage(codeTextArea, SyntaxUtils.CLASSES_LIST.get(word));
+                                int wordPosition = position + word.length() - query.length();
+                                AutoImport.importClassPackage(codeTextArea,wordPosition, SyntaxUtils.CLASSES_LIST.get(word));
                             } else {
                                 codeTextArea.moveTo(position + word.length() - query.length());
                             }
