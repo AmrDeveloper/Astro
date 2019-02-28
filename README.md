@@ -22,7 +22,7 @@ Free and Open Source Java IDE
 - Files Drag Drop
 - Run Single Java File
 - Auto Comment and un Comment selected Code
-- Brackets Auto Complete
+- Brackets and Quotes Auto Complete
 - Project Files Change Listener
 
 
