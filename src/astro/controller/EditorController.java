@@ -61,7 +61,7 @@ class EditorController {
         //Event Listener
         codeTextArea.setOnKeyTyped(onKeyTyped);
         codeTextArea.setOnKeyPressed(onSpaceSensors);
-        codeTextArea.setOnKeyReleased(onBracketTyped);
+        codeTextArea.setOnKeyReleased(onKeyReleased);
         codeTextArea.setOnNewSelectionDragFinished(onSelectionDragFinished);
         codeTextArea.caretPositionProperty().addListener(caretPositionChange);
     }
@@ -256,7 +256,7 @@ class EditorController {
         }
     };
 
-    private final EventHandler<KeyEvent> onBracketTyped = event -> {
+    private final EventHandler<KeyEvent> onKeyReleased = event -> {
         if (!event.getCode().equals(KeyCode.SHIFT) &&
                 !event.getCode().equals(KeyCode.ALT) &&
                 !event.getCode().equals(KeyCode.CONTROL) &&
@@ -267,7 +267,7 @@ class EditorController {
             int cursorPosition = codeTextArea.getCaretPosition();
             if (cursorPosition > 0) {
                 char bracket = codeTextArea.getText(cursorPosition - 1, cursorPosition).charAt(0);
-                BracketComplete.onBracketsComplete(codeTextArea, bracket, cursorPosition);
+                PuncComplete.onPunctuationComplete(codeTextArea, bracket, cursorPosition);
             }
         }
     };

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/EditorController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,15 +13,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="476">
+              <caret line="258" column="54" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
               <folding>
                 <element signature="method#EditorController#0;class#EditorController#0" />
-                <element signature="method#editorSettings#0;class#EditorController#0" />
                 <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
                 <element signature="e#2443#2719#0" />
                 <element signature="e#2489#2565#1" />
@@ -43,35 +41,10 @@
                 <element signature="method#openCurrentFolder#0;class#EditorController#0" />
                 <element signature="method#openTerminalHere#0;class#EditorController#0" />
                 <element signature="e#9199#9311#0" />
-                <element signature="e#9368#11104#0" />
-                <element signature="e#9411#11098#1" />
-                <element signature="e#9589#9652#1" />
-                <element signature="e#9658#9714#1" />
-                <element signature="e#9756#11026#1" />
-                <element signature="e#9901#11012#1" />
-                <element signature="e#10273#10992#0" />
-                <element signature="e#10435#10919#0" />
-                <element signature="e#10616#10760#1" />
-                <element signature="e#10766#10893#1" />
-                <element signature="e#11032#11088#1" />
-                <element signature="e#11165#11894#0" />
-                <element signature="e#11569#11888#1" />
-                <element signature="e#11673#11878#1" />
-                <element signature="e#11955#12094#0" />
-                <element signature="e#12017#12088#1" />
-                <element signature="e#12166#12502#0" />
-                <element signature="e#12212#12337#1" />
-                <element signature="e#12366#12496#1" />
+                <element signature="e#9368#11211#0" />
+                <element signature="e#12062#12201#0" />
+                <element signature="e#12273#12609#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/syntax/AutoImport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -80,6 +53,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/astro/syntax/AutoImport.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -92,6 +73,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,11 +111,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551295340071" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551345557139" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -187,17 +168,13 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17152104" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1788026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3295325" />
@@ -205,24 +182,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+    <entry file="file://$PROJECT_DIR$/src/astro/syntax/AutoImport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="258" column="54" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
           <folding>
             <element signature="method#EditorController#0;class#EditorController#0" />
-            <element signature="method#editorSettings#0;class#EditorController#0" />
             <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
             <element signature="e#2443#2719#0" />
             <element signature="e#2489#2565#1" />
@@ -243,33 +230,10 @@
             <element signature="method#openCurrentFolder#0;class#EditorController#0" />
             <element signature="method#openTerminalHere#0;class#EditorController#0" />
             <element signature="e#9199#9311#0" />
-            <element signature="e#9368#11104#0" />
-            <element signature="e#9411#11098#1" />
-            <element signature="e#9589#9652#1" />
-            <element signature="e#9658#9714#1" />
-            <element signature="e#9756#11026#1" />
-            <element signature="e#9901#11012#1" />
-            <element signature="e#10273#10992#0" />
-            <element signature="e#10435#10919#0" />
-            <element signature="e#10616#10760#1" />
-            <element signature="e#10766#10893#1" />
-            <element signature="e#11032#11088#1" />
-            <element signature="e#11165#11894#0" />
-            <element signature="e#11569#11888#1" />
-            <element signature="e#11673#11878#1" />
-            <element signature="e#11955#12094#0" />
-            <element signature="e#12017#12088#1" />
-            <element signature="e#12166#12502#0" />
-            <element signature="e#12212#12337#1" />
-            <element signature="e#12366#12496#1" />
+            <element signature="e#9368#11211#0" />
+            <element signature="e#12062#12201#0" />
+            <element signature="e#12273#12609#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/syntax/AutoImport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
