@@ -2,7 +2,7 @@ package astro.syntax;
 
 import org.fxmisc.richtext.CodeArea;
 
-public class PuncComplete {
+public class PunctuationComplete {
 
     //Curly braces
     private static final char OPEN_CURLY_BRACES = '{';
@@ -18,6 +18,7 @@ public class PuncComplete {
 
     //Quotes
     private static final char SINGLE_QUOTE = '\'';
+    private static final char DOUBLE_QUOTE = '\"';
 
     /**
      * Check what is the type of this bracket and and insert the close type of it
@@ -44,6 +45,11 @@ public class PuncComplete {
             }
             case SINGLE_QUOTE: {
                 codeArea.insertText(position, String.valueOf(SINGLE_QUOTE));
+                codeArea.moveTo(position);
+                break;
+            }
+            case DOUBLE_QUOTE: {
+                codeArea.insertText(position, String.valueOf(DOUBLE_QUOTE));
                 codeArea.moveTo(position);
                 break;
             }

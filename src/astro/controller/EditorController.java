@@ -267,7 +267,7 @@ class EditorController {
             int cursorPosition = codeTextArea.getCaretPosition();
             if (cursorPosition > 0) {
                 char bracket = codeTextArea.getText(cursorPosition - 1, cursorPosition).charAt(0);
-                PuncComplete.onPunctuationComplete(codeTextArea, bracket, cursorPosition);
+                PunctuationComplete.onPunctuationComplete(codeTextArea, bracket, cursorPosition);
             }
         }
     };
