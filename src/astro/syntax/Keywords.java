@@ -15,12 +15,12 @@ public class Keywords {
         InputStream stream = Thread.currentThread().getContextClassLoader().getResourceAsStream("astro/res/files/classes.txt");
         BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
         Stream<String> lines = reader.lines();
-        Object[] linkesArray = lines.toArray();
-        int wordLength = linkesArray.length;
+        Object[] linesArray = lines.toArray();
+        int wordLength = linesArray.length;
         for(int i = 0 ; i < wordLength ; i = i + 2){
-            SyntaxUtils.KEYWORDS_lIST.add(linkesArray[i].toString());
-            SyntaxUtils.KEYWORDS_lIST.add(linkesArray[i + 1].toString());
-            SyntaxUtils.CLASSES_LIST.put(linkesArray[i].toString(),linkesArray[i + 1].toString());
+            SyntaxUtils.KEYWORDS_lIST.add(linesArray[i].toString());
+            SyntaxUtils.KEYWORDS_lIST.add(linesArray[i + 1].toString());
+            SyntaxUtils.CLASSES_LIST.put(linesArray[i].toString(),linesArray[i + 1].toString());
         }
         SyntaxUtils.KEYWORDS_lIST.addAll(Arrays.asList(SyntaxUtils.KEYWORDS));
     }
