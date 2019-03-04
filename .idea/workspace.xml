@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/syntax/Keywords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/syntax/Keywords.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,35 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+        <entry file="file://$PROJECT_DIR$/src/astro/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="method#EditorController#0;class#EditorController#0" />
-                <element signature="method#editorSettings#0;class#EditorController#0" />
-                <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
-                <element signature="method#codeAreaAddLineNumber#0;class#EditorController#0" />
-                <element signature="method#codeAreaMenuItems#0;class#EditorController#0" />
-                <element signature="method#computeHighlightingAsync#0;class#EditorController#0" />
-                <element signature="method#applyHighlighting#0;class#EditorController#0" />
-                <element signature="method#computeHighlighting#0;class#EditorController#0" />
-                <element signature="method#formatSourceCode#0;class#EditorController#0" />
-                <element signature="method#saveSourceCode#0;class#EditorController#0" />
-                <element signature="method#openCurrentFolder#0;class#EditorController#0" />
-                <element signature="method#openTerminalHere#0;class#EditorController#0" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/src/astro/syntax/Keywords.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="391">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -59,6 +45,7 @@
         <option value="$PROJECT_DIR$/src/astro/syntax/PuncComplete.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/PunctuationComplete.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/astro/syntax/Keywords.java" />
       </list>
     </option>
   </component>
@@ -73,8 +60,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,7 +141,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18122977" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18365696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -182,6 +169,9 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/astro/syntax/AutoImport.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -197,9 +187,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-143">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="method#EditorController#0;class#EditorController#0" />
@@ -214,14 +211,26 @@
             <element signature="method#saveSourceCode#0;class#EditorController#0" />
             <element signature="method#openCurrentFolder#0;class#EditorController#0" />
             <element signature="method#openTerminalHere#0;class#EditorController#0" />
+            <element signature="e#9198#9310#0" />
+            <element signature="e#9367#11210#0" />
+            <element signature="e#11270#12006#0" />
+            <element signature="e#12067#12206#0" />
+            <element signature="e#12278#12614#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/astro/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="35" />
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/syntax/Keywords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
