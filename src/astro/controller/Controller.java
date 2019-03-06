@@ -69,13 +69,13 @@ public class Controller implements Initializable {
 
     private static final int FILE_PANE_INDEX = 0;
     private static final int RESULT_PANE_INDEX = 0;
-    private static final int THREAD_FIXED_NUMBER = 5;
+    private static final int THREAD_AVAILABLE_NUMBER = Runtime.getRuntime().availableProcessors();
     private final Image PROJECT_DIR = new Image(getClass().getResourceAsStream("/astro/res/icons/folder/main_folder.png"));
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         mainController = this;
-        executorService = Executors.newFixedThreadPool(THREAD_FIXED_NUMBER);
+        executorService = Executors.newFixedThreadPool(THREAD_AVAILABLE_NUMBER);
 
         onMenuItemsActions();
         openedListSettings();
