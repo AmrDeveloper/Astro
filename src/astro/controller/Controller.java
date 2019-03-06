@@ -249,7 +249,8 @@ public class Controller implements Initializable {
         SingleSelectionModel<Tab> selectionModel = codeAreaLayout.getSelectionModel();
         ObservableList<Source> selectedItems = openedFilesList.getSelectionModel().getSelectedItems();
         Source sourceFile = selectedItems.get(0);
-        for (int i = 0; i < codeAreaLayout.getTabs().size(); i++) {
+        final int currentTabNumber = codeAreaLayout.getTabs().size();
+        for (int i = 0; i < currentTabNumber; i++) {
             if (sourceFile.getName().equals(codeAreaLayout.getTabs().get(i).getText())) {
                 selectionModel.select(i);
             }
@@ -305,7 +306,8 @@ public class Controller implements Initializable {
     }
 
     private void onTabCloseAction(Tab tab) {
-        for (int i = 0; i < openedFilesList.getItems().size(); i++) {
+        final int fileListItemCount = openedFilesList.getItems().size();
+        for (int i = 0; i < fileListItemCount; i++) {
             if (openedFilesList.getItems().get(i).getName().equals(tab.getText())) {
                 openedFilesList.getItems().remove(i);
                 openedFilesList.refresh();
