@@ -1,4 +1,4 @@
-# Astro (In Development)
+# Astro
 ## Version 1.0.3 Beta
 Free and Open Source Java IDE
  
@@ -18,7 +18,7 @@ Free and Open Source Java IDE
 - Java Code Format
 - Code ScreenShot
 - Open Terminal
-- Open Termianl in Current File Path
+- Open Terminal in Current File Path
 - Files Drag Drop
 - Run Single Java File
 - Auto Comment and un Comment selected Code
