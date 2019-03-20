@@ -34,31 +34,48 @@ import java.util.stream.Collectors;
 public class Controller implements Initializable {
 
     //FX Views
-    @FXML private TextArea resultTextArea;
-    @FXML private TabPane codeAreaLayout;
-    @FXML private SplitPane mainSplitPane;
-    @FXML private SplitPane codeSplitPane;
+    @FXML
+    private TextArea resultTextArea;
+    @FXML
+    private TabPane codeAreaLayout;
+    @FXML
+    private SplitPane mainSplitPane;
+    @FXML
+    private SplitPane codeSplitPane;
 
-    @FXML private ListView<Source> openedFilesList;
-    @FXML private TreeView<Source> filesTreeView;
-    @FXML private TreeView<String> analysisTreeView;
+    @FXML
+    private ListView<Source> openedFilesList;
+    @FXML
+    private TreeView<Source> filesTreeView;
+    @FXML
+    private TreeView<String> analysisTreeView;
 
     //New Menu Items
-    @FXML private MenuItem newFileMenuItem;
-    @FXML private MenuItem newClassMenuItem1;
-    @FXML private MenuItem newProjectMenuItem;
+    @FXML
+    private MenuItem newFileMenuItem;
+    @FXML
+    private MenuItem newClassMenuItem1;
+    @FXML
+    private MenuItem newProjectMenuItem;
 
     //File Menu Items
-    @FXML private MenuItem openFileMenuItem;
-    @FXML private MenuItem openFolderMenuItem;
-    @FXML private MenuItem closeMenuItem;
-    @FXML private MenuItem exitMenuItem;
+    @FXML
+    private MenuItem openFileMenuItem;
+    @FXML
+    private MenuItem openFolderMenuItem;
+    @FXML
+    private MenuItem closeMenuItem;
+    @FXML
+    private MenuItem exitMenuItem;
 
     //View Menu Items
-    @FXML private MenuItem showFilesMenuAction;
-    @FXML private MenuItem showResultMenuAction;
+    @FXML
+    private MenuItem showFilesMenuAction;
+    @FXML
+    private MenuItem showResultMenuAction;
 
-    @FXML static Controller mainController;
+    @FXML
+    static Controller mainController;
 
     private ProjectWatcher projectWatcherService;
     private SyntaxAnalysis syntaxAnalysis;
@@ -130,7 +147,7 @@ public class Controller implements Initializable {
                 String title = "New File";
                 String viewPath = "/astro/views/new_file.fxml";
                 String stylePath = "/astro/styles/new_create_style.css";
-                intent.showAnotherView(viewPath, title,stylePath);
+                intent.showAnotherView(viewPath, title, stylePath);
             }
         } else {
             System.out.println("Please Create Project First ");
@@ -155,7 +172,7 @@ public class Controller implements Initializable {
                 String title = "New Java Class";
                 String viewPath = "/astro/views/new_class.fxml";
                 String stylePath = "/astro/styles/new_create_style.css";
-                intent.showAnotherView(viewPath, title,stylePath);
+                intent.showAnotherView(viewPath, title, stylePath);
             }
         } else {
             System.out.println("Please Create Project First ");
@@ -168,7 +185,7 @@ public class Controller implements Initializable {
         String stylePath = "/astro/styles/new_create_style.css";
 
         Intent intent = Intent.getIntent();
-        intent.showAnotherView(viewPath, title,stylePath);
+        intent.showAnotherView(viewPath, title, stylePath);
     }
 
     private void onCodeLayoutDragDropped(DragEvent event) {
@@ -179,11 +196,12 @@ public class Controller implements Initializable {
         for (File file : currentDropped) {
             if (sourceStream.indexOf(new Source(file)) == -1) {
                 String fileName = file.getName();
-                if (fileName.endsWith(".java")) {
+                if (fileName.endsWith(".java"))
                     executorService.execute(() -> openSourceInTab(file));
-                } else if (fileName.endsWith(".txt")) {
+                else if (fileName.endsWith(".txt"))
                     executorService.execute(() -> openTextInTab(file));
-                }
+                else if (fileName.endsWith(".md"))
+                    executorService.execute(() -> openTextInTab(file));
             }
         }
     }
@@ -197,10 +215,12 @@ public class Controller implements Initializable {
     private void onOpenFileMenuAction() {
         File outputFile = FileManager.openSourceFile("Open Java File");
         if (outputFile != null)
-                if (outputFile.getName().endsWith(".java"))
-                    executorService.execute(() -> openSourceInTab(outputFile));
-                else if (outputFile.getName().endsWith(".txt"))
-                    executorService.execute(() -> openTextInTab(outputFile));
+            if (outputFile.getName().endsWith(".java"))
+                executorService.execute(() -> openSourceInTab(outputFile));
+            else if (outputFile.getName().endsWith(".txt"))
+                executorService.execute(() -> openTextInTab(outputFile));
+            else if (outputFile.getName().endsWith(".md"))
+                executorService.execute(() -> openTextInTab(outputFile));
     }
 
     private void onOpenFolderMenuAction() {
@@ -213,7 +233,7 @@ public class Controller implements Initializable {
         codeAreaLayout.getTabs().clear();
         resultTextArea.clear();
         filesTreeView.setRoot(null);
-        if(Objects.nonNull(projectWatcherService))projectWatcherService.stopWatcher();
+        if (Objects.nonNull(projectWatcherService)) projectWatcherService.stopWatcher();
     }
 
     private void onExitMenuAction() {
@@ -336,16 +356,16 @@ public class Controller implements Initializable {
         }
     };
 
-    void updateFilesTreeView(File sourceFolder){
+    void updateFilesTreeView(File sourceFolder) {
         if (Objects.nonNull(sourceFolder)) {
-            if(projectWatcherService != null){
+            if (projectWatcherService != null) {
                 projectWatcherService.stopWatcher();
             }
             FileCrawler crawler = new FileCrawler();
             TreeItem<Source> sourceTreeItem = crawler.getFilesForDirectory(sourceFolder);
             sourceTreeItem.setGraphic(new ImageView(PROJECT_DIR));
             executorService.submit(() -> Platform.runLater(() -> filesTreeView.setRoot(sourceTreeItem)));
-            projectWatcherService = FileService.setFileService(filesTreeView,sourceFolder);
+            projectWatcherService = FileService.setFileService(filesTreeView, sourceFolder);
         }
     }
 }
