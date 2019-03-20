@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/OnFileChangeListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/ProjectWatcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/views/main_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/views/main_view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/views/main_view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/views/main_view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/MainController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="168" column="36" lean-forward="true" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
+            <state relative-caret-position="296">
+              <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,7 +103,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553103299061" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553103394599" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -176,7 +166,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295325" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22348917" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -469,8 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="168" column="36" lean-forward="true" selection-start-line="168" selection-start-column="36" selection-end-line="168" selection-end-column="36" />
+        <state relative-caret-position="296">
+          <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -151,10 +151,13 @@ public class MainController implements Initializable {
                 String viewPath = "/astro/views/new_file.fxml";
                 String stylePath = "/astro/styles/new_create_style.css";
                 intent.showAnotherView(viewPath, title, stylePath);
+            } else {
+                String warnMessage = "Please Select Directory First";
+                DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
             String warnMessage = "Please Create or Open Project First";
-            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG,null,warnMessage);
+            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
 
@@ -177,10 +180,13 @@ public class MainController implements Initializable {
                 String viewPath = "/astro/views/new_class.fxml";
                 String stylePath = "/astro/styles/new_create_style.css";
                 intent.showAnotherView(viewPath, title, stylePath);
+            } else {
+                String warnMessage = "Please Select Directory First";
+                DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
             String warnMessage = "Please Create or Open Project First";
-            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG,null,warnMessage);
+            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
 
