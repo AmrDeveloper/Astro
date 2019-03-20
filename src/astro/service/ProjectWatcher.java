@@ -1,4 +1,4 @@
-package astro.utils;
+package astro.service;
 
 import java.io.IOException;
 import java.nio.file.*;

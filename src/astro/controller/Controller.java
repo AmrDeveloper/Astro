@@ -3,6 +3,8 @@ package astro.controller;
 import astro.analysis.SyntaxAnalysis;
 import astro.constants.Icons;
 import astro.model.Source;
+import astro.service.FileService;
+import astro.service.ProjectWatcher;
 import astro.utils.*;
 import com.google.common.io.Files;
 import javafx.application.Platform;
