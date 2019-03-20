@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
             minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="astro.controller.Controller">
+            fx:controller="astro.controller.MainController">
     <children>
         <MenuBar accessibleRole="PARENT" layoutY="2.0" maxHeight="1.7976931348623157E308"
                  maxWidth="1.7976931348623157E308" prefHeight="25.0" AnchorPane.leftAnchor="0.0"

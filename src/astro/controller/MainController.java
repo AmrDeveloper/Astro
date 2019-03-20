@@ -33,7 +33,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
-public class Controller implements Initializable {
+public class MainController implements Initializable {
 
     //FX Views
     @FXML
@@ -77,7 +77,7 @@ public class Controller implements Initializable {
     private MenuItem showResultMenuAction;
 
     @FXML
-    static Controller mainController;
+    static MainController mainController;
 
     private ProjectWatcher projectWatcherService;
     private SyntaxAnalysis syntaxAnalysis;
