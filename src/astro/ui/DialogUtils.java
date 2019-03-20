@@ -9,26 +9,26 @@ public class DialogUtils {
     public static final String ERRORDIALOG = "Error Dialog";
 
     public static void createInformationDialog(String title, String header, String content) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.setContentText(content);
-        alert.showAndWait();
+        Alert infoDialog = new Alert(Alert.AlertType.INFORMATION);
+        infoDialog.setTitle(title);
+        infoDialog.setHeaderText(header);
+        infoDialog.setContentText(content);
+        infoDialog.showAndWait();
     }
 
     public static void createWarningDIalog(String title, String header, String content){
-        Alert alert = new Alert(Alert.AlertType.WARNING);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.setContentText(content);
-        alert.showAndWait();
+        Alert warnDialog = new Alert(Alert.AlertType.WARNING);
+        warnDialog.setTitle(title);
+        warnDialog.setHeaderText(header);
+        warnDialog.setContentText(content);
+        warnDialog.showAndWait();
     }
 
     public static void createErrorDIalog(String title, String header, String content){
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.setContentText(content);
-        alert.showAndWait();
+        Alert errorDialog = new Alert(Alert.AlertType.ERROR);
+        errorDialog.setTitle(title);
+        errorDialog.setHeaderText(header);
+        errorDialog.setContentText(content);
+        errorDialog.showAndWait();
     }
 }
