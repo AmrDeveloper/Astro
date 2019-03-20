@@ -6,7 +6,7 @@ public class DialogUtils {
 
     public static final String INFO_DIALOG = "Information Dialog";
     public static final String WARNING_DIALOG = "Warning Dialog";
-    public static final String ERRORDIALOG = "Error Dialog";
+    public static final String ERROR_DIALOG = "Error Dialog";
 
     public static void createInformationDialog(String title, String header, String content) {
         Alert infoDialog = new Alert(Alert.AlertType.INFORMATION);

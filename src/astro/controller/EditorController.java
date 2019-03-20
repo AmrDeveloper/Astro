@@ -2,6 +2,7 @@ package astro.controller;
 
 import astro.executor.CodeExecutor;
 import astro.syntax.*;
+import astro.ui.DialogUtils;
 import astro.utils.DesktopUtils;
 import astro.utils.FileManager;
 import astro.utils.ScreenCapture;
@@ -192,7 +193,8 @@ class EditorController {
         if (sourceFile.canWrite()) {
             FileManager.updateContent(sourceFile, sourceCode);
         } else {
-            //TODO : Show Error Dialog
+            String errorMessage = "Your File may be deleted or path changed";
+            DialogUtils.createErrorDIalog(DialogUtils.ERROR_DIALOG,null,errorMessage);
         }
     }
 
