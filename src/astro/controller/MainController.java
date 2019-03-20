@@ -5,6 +5,7 @@ import astro.constants.Icons;
 import astro.model.Source;
 import astro.service.FileService;
 import astro.service.ProjectWatcher;
+import astro.ui.DialogUtils;
 import astro.utils.*;
 import com.google.common.io.Files;
 import javafx.application.Platform;
@@ -152,7 +153,8 @@ public class MainController implements Initializable {
                 intent.showAnotherView(viewPath, title, stylePath);
             }
         } else {
-            System.out.println("Please Create Project First ");
+            String warnMessage = "Please Create or Open Project First";
+            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG,null,warnMessage);
         }
     }
 
@@ -177,7 +179,8 @@ public class MainController implements Initializable {
                 intent.showAnotherView(viewPath, title, stylePath);
             }
         } else {
-            System.out.println("Please Create Project First ");
+            String warnMessage = "Please Create or Open Project First";
+            DialogUtils.createWarningDIalog(DialogUtils.WARNING_DIALOG,null,warnMessage);
         }
     }
 
