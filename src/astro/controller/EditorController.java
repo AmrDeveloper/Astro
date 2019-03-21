@@ -193,6 +193,7 @@ class EditorController {
         if (sourceFile.canWrite()) {
             FileManager.updateContent(sourceFile, sourceCode);
         } else {
+            //If File is deleted re create file then update content again
             String confirmMessage = "Save Current File ?!";
             DialogUtils.createConfirmDialog(DialogUtils.CONFIRM_DIALOG,null,confirmMessage,()->{
                 FileManager.createNewFile(sourceFile.getPath());
