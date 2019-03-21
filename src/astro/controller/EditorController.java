@@ -193,8 +193,9 @@ class EditorController {
         if (sourceFile.canWrite()) {
             FileManager.updateContent(sourceFile, sourceCode);
         } else {
+            //TODO : Show save as dialog
             String errorMessage = "Your File may be deleted or path changed";
-            DialogUtils.createErrorDIalog(DialogUtils.ERROR_DIALOG,null,errorMessage);
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
         }
     }
 

@@ -16,7 +16,7 @@ public class DialogUtils {
         infoDialog.showAndWait();
     }
 
-    public static void createWarningDIalog(String title, String header, String content){
+    public static void createWarningDialog(String title, String header, String content){
         Alert warnDialog = new Alert(Alert.AlertType.WARNING);
         warnDialog.setTitle(title);
         warnDialog.setHeaderText(header);
@@ -24,7 +24,7 @@ public class DialogUtils {
         warnDialog.showAndWait();
     }
 
-    public static void createErrorDIalog(String title, String header, String content){
+    public static void createErrorDialog(String title, String header, String content){
         Alert errorDialog = new Alert(Alert.AlertType.ERROR);
         errorDialog.setTitle(title);
         errorDialog.setHeaderText(header);
