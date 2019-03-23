@@ -1,5 +1,6 @@
 package astro.utils;
 
+import astro.ui.DialogUtils;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 
@@ -55,7 +56,8 @@ public class FileManager {
             fileWriter.write(content);
             fileWriter.close();
         } catch (IOException iox) {
-            iox.printStackTrace();
+            String errorMessage = "Can't Save this file, Please make sure this file not deleted";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
         }
     }
 
