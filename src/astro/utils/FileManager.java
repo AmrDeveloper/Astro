@@ -18,6 +18,8 @@ public class FileManager {
             newFolder.createNewFile();
             return newFolder;
         } catch (IOException e) {
+            String errorMessage = "Can't Create new file in this path";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return null;
         }
     }
