@@ -32,54 +32,40 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class MainController implements Initializable {
 
     //FX Views
-    @FXML
-    private TextArea resultTextArea;
-    @FXML
-    private TabPane codeAreaLayout;
-    @FXML
-    private SplitPane mainSplitPane;
-    @FXML
-    private SplitPane codeSplitPane;
+    @FXML private TextArea resultTextArea;
+    @FXML private TabPane codeAreaLayout;
+    @FXML private SplitPane mainSplitPane;
+    @FXML private SplitPane codeSplitPane;
 
-    @FXML
-    private ListView<Source> openedFilesList;
-    @FXML
-    private TreeView<Source> filesTreeView;
-    @FXML
-    private TreeView<String> analysisTreeView;
+    @FXML private ListView<Source> openedFilesList;
+    @FXML private TreeView<Source> filesTreeView;
+    @FXML private TreeView<String> analysisTreeView;
 
     //New Menu Items
-    @FXML
-    private MenuItem newFileMenuItem;
-    @FXML
-    private MenuItem newClassMenuItem1;
-    @FXML
-    private MenuItem newProjectMenuItem;
+    @FXML private MenuItem newFileMenuItem;
+    @FXML  private MenuItem newClassMenuItem1;
+    @FXML  private MenuItem newProjectMenuItem;
 
     //File Menu Items
-    @FXML
-    private MenuItem openFileMenuItem;
-    @FXML
-    private MenuItem openFolderMenuItem;
-    @FXML
-    private MenuItem closeMenuItem;
-    @FXML
-    private MenuItem exitMenuItem;
+    @FXML private MenuItem openFileMenuItem;
+    @FXML private MenuItem openFolderMenuItem;
+    @FXML private MenuItem closeMenuItem;
+    @FXML private MenuItem exitMenuItem;
 
     //View Menu Items
-    @FXML
-    private MenuItem showFilesMenuAction;
-    @FXML
-    private MenuItem showResultMenuAction;
+    @FXML private MenuItem showFilesMenuAction;
+    @FXML private MenuItem showResultMenuAction;
 
-    @FXML
-    static MainController mainController;
+    //Controllers
+    @FXML static MainController mainController;
 
+    private Logger debugger;
     private ProjectWatcher projectWatcherService;
     private SyntaxAnalysis syntaxAnalysis;
     private ExecutorService executorService;
@@ -89,6 +75,7 @@ public class MainController implements Initializable {
 
     private static final int FILE_PANE_INDEX = 0;
     private static final int RESULT_PANE_INDEX = 0;
+    private static final String DEBUG_TAG = MainController.class.getSimpleName();
     private static final int THREAD_AVAILABLE_NUMBER = Runtime.getRuntime().availableProcessors();
     private final Image PROJECT_DIR = new Image(getClass().getResourceAsStream("/astro/res/icons/folder/main_folder.png"));
 
@@ -96,6 +83,7 @@ public class MainController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         mainController = this;
         executorService = Executors.newFixedThreadPool(THREAD_AVAILABLE_NUMBER);
+        debugger = Logger.getLogger(DEBUG_TAG);
 
         onMenuItemsActions();
         openedListSettings();
@@ -152,12 +140,20 @@ public class MainController implements Initializable {
                 String stylePath = "/astro/styles/new_create_style.css";
                 intent.showAnotherView(viewPath, title, stylePath);
             } else {
+                //For User
                 String warnMessage = "Please Select Directory First";
                 DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
+
+                //For Debugging
+                debugger.warning(warnMessage);
             }
         } else {
+            //For User
             String warnMessage = "Please Create or Open Project First";
             DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
+
+            //For Debugging
+            debugger.warning(warnMessage);
         }
     }
 
