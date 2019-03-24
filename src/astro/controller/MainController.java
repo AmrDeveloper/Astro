@@ -141,20 +141,16 @@ public class MainController implements Initializable {
                 intent.showAnotherView(viewPath, title, stylePath);
             } else {
                 String warnMessage = "Please Select Directory First";
-
-                //For Debugging
+                //Debugging warning
                 debugger.warning(warnMessage);
-
-                //For User
+                //UI warning
                 DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
             String warnMessage = "Please Create or Open Project First";
-
-            //For Debugging
+            //Debugging warning
             debugger.warning(warnMessage);
-
-            //For User
+            //UI warning
             DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
@@ -180,20 +176,16 @@ public class MainController implements Initializable {
                 intent.showAnotherView(viewPath, title, stylePath);
             } else {
                 String warnMessage = "Please Select Directory First";
-
-                //For Debugging
+                //Debugging warning
                 debugger.warning(warnMessage);
-
-                //For User
+                //UI warning
                 DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
             String warnMessage = "Please Create or Open Project First";
-
-            //For Debugging
+            //Debugging warning
             debugger.warning(warnMessage);
-
-            //For User
+            //UI warning
             DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
