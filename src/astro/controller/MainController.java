@@ -140,20 +140,22 @@ public class MainController implements Initializable {
                 String stylePath = "/astro/styles/new_create_style.css";
                 intent.showAnotherView(viewPath, title, stylePath);
             } else {
-                //For User
                 String warnMessage = "Please Select Directory First";
-                DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
 
                 //For Debugging
                 debugger.warning(warnMessage);
+
+                //For User
+                DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
-            //For User
             String warnMessage = "Please Create or Open Project First";
-            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
 
             //For Debugging
             debugger.warning(warnMessage);
+
+            //For User
+            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
 
@@ -178,10 +180,20 @@ public class MainController implements Initializable {
                 intent.showAnotherView(viewPath, title, stylePath);
             } else {
                 String warnMessage = "Please Select Directory First";
+
+                //For Debugging
+                debugger.warning(warnMessage);
+
+                //For User
                 DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
             }
         } else {
             String warnMessage = "Please Create or Open Project First";
+
+            //For Debugging
+            debugger.warning(warnMessage);
+
+            //For User
             DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
