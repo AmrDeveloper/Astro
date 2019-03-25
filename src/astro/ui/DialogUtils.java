@@ -5,7 +5,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
 import java.util.Optional;
-import java.util.function.Function;
 
 public class DialogUtils {
 
