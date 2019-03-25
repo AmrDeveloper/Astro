@@ -336,7 +336,11 @@ public class MainController implements Initializable {
                 openedFilesList.getItems().add(new Source(textFile));
             });
         } catch (IOException e) {
-            e.printStackTrace();
+            String warnMessage = "Can't Open File in Tab pane";
+            //Debugging warning
+            debugger.warning(warnMessage);
+            //UI warning
+            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
         }
     }
 
