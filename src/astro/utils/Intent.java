@@ -10,10 +10,13 @@ import javafx.stage.Stage;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class Intent extends IntentStorage {
 
     private static Intent mIntent;
+    private Logger debug = Logger.getLogger(DEBUG_TAG);
+    private static final String DEBUG_TAG = Intent.class.getSimpleName();
 
     @Nonnull
     synchronized public static Intent getIntent() {
@@ -37,6 +40,7 @@ public class Intent extends IntentStorage {
             stage.show();
             return controller;
         } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
             return null;
         }
     }
@@ -57,6 +61,7 @@ public class Intent extends IntentStorage {
             stage.show();
             return controller;
         } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
             return null;
         }
     }
@@ -77,6 +82,7 @@ public class Intent extends IntentStorage {
             stage.show();
             return controller;
         } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
             return null;
         }
     }
@@ -97,6 +103,7 @@ public class Intent extends IntentStorage {
             stage.show();
             return controller;
         } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
             return null;
         }
     }
@@ -108,6 +115,7 @@ public class Intent extends IntentStorage {
             loader.load();
             return loader.getController();
         } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
             return null;
         }
     }
