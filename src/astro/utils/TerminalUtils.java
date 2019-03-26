@@ -1,5 +1,7 @@
 package astro.utils;
 
+import astro.ui.DialogUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -36,6 +38,11 @@ public class TerminalUtils {
             runtime.exec("cmd.exe /c start", null);
             return 0;
         } catch (IOException e) {
+            final String errorMessage = "Can't Launch Windows Terminal";
+            //Debugging Console
+            debug.warning(errorMessage);
+            //Warning UI
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return 1;
         }
     }
@@ -50,6 +57,11 @@ public class TerminalUtils {
             runtime.exec("cmd.exe /c start", null, file);
             return 0;
         } catch (IOException e) {
+            final String errorMessage = "Can't Launch Windows Terminal Here";
+            //Debugging Console
+            debug.warning(errorMessage);
+            //Warning UI
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return 1;
         }
     }
@@ -63,6 +75,11 @@ public class TerminalUtils {
             runtime.exec("bash -c start", null);
             return 0;
         } catch (IOException e) {
+            final String errorMessage = "Can't Launch Unix Based Terminal";
+            //Debugging Console
+            debug.warning(errorMessage);
+            //Warning UI
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return 1;
         }
     }
@@ -77,6 +94,11 @@ public class TerminalUtils {
             runtime.exec("bash -c start", null, file);
             return 0;
         } catch (IOException e) {
+            final String errorMessage = "Can't Launch Unix Based Terminal Here";
+            //Debugging Console
+            debug.warning(errorMessage);
+            //Warning UI
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return 1;
         }
     }
