@@ -1,11 +1,13 @@
 package astro.utils;
 
-import astro.utils.OSValidator;
-
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Logger;
 
 public class TerminalUtils {
+
+    private static final String DEBUG_TAG = TerminalUtils.class.getSimpleName();
+    private static final Logger debug = Logger.getLogger(DEBUG_TAG);
 
     public static int openTerminal() {
         if (OSValidator.isWindows()) {
@@ -78,5 +80,4 @@ public class TerminalUtils {
             return 1;
         }
     }
-
 }

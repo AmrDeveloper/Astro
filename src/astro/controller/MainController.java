@@ -82,7 +82,7 @@ public class MainController implements Initializable {
     @FXML
     static MainController mainController;
 
-    private Logger debugger;
+    private static Logger debugger;
     private ProjectWatcher projectWatcherService;
     private SyntaxAnalysis syntaxAnalysis;
     private ExecutorService executorService;
