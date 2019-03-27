@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/astro/utils/TerminalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/utils/TerminalUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,15 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/utils/TerminalUtils.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="96" column="78" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -50,7 +48,6 @@
         <option value="$PROJECT_DIR$/src/astro/syntax/PunctuationComplete.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/Keywords.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/SpaceSensors.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/astro/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/Action.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
@@ -60,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/astro/utils/ScreenCapture.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/TerminalUtils.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -74,6 +72,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,8 +96,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,7 +153,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15695792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,13 +264,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -460,11 +451,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/utils/TerminalUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
+        <state relative-caret-position="1632">
           <caret line="96" column="78" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>

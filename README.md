@@ -1,5 +1,5 @@
 # Astro
-## Version 1.0.3 Beta
+## Version 1.0.5
 Free and Open Source Java IDE
  
  
