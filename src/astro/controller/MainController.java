@@ -253,6 +253,7 @@ public class MainController implements Initializable {
         System.exit(0);
     }
 
+    //TODO : Issue when User Change Astro IDE Size
     private void onShowFilesMenuAction() {
         if (isFilesPaneVisible) {
             mainSplitPane.setDividerPosition(FILE_PANE_INDEX, 0);
@@ -265,6 +266,7 @@ public class MainController implements Initializable {
         }
     }
 
+    //TODO : Issue when User Change Astro IDE Size
     private void onShowResultMenuAction() {
         if (isResultPaneVisible) {
             codeSplitPane.setDividerPosition(RESULT_PANE_INDEX, 1);
