@@ -38,49 +38,32 @@ import java.util.stream.Collectors;
 public class MainController implements Initializable {
 
     //FX Views
-    @FXML
-    private TextArea resultTextArea;
-    @FXML
-    private TabPane codeAreaLayout;
-    @FXML
-    private SplitPane mainSplitPane;
-    @FXML
-    private SplitPane codeSplitPane;
+    @FXML private TextArea resultTextArea;
+    @FXML private TabPane codeAreaLayout;
+    @FXML private SplitPane mainSplitPane;
+    @FXML private SplitPane codeSplitPane;
 
-    @FXML
-    private ListView<Source> openedFilesList;
-    @FXML
-    private TreeView<Source> filesTreeView;
-    @FXML
-    private TreeView<String> analysisTreeView;
+    @FXML private ListView<Source> openedFilesList;
+    @FXML private TreeView<Source> filesTreeView;
+    @FXML private TreeView<String> analysisTreeView;
 
     //New Menu Items
-    @FXML
-    private MenuItem newFileMenuItem;
-    @FXML
-    private MenuItem newClassMenuItem1;
-    @FXML
-    private MenuItem newProjectMenuItem;
+    @FXML private MenuItem newFileMenuItem;
+    @FXML private MenuItem newClassMenuItem1;
+    @FXML private MenuItem newProjectMenuItem;
 
     //File Menu Items
-    @FXML
-    private MenuItem openFileMenuItem;
-    @FXML
-    private MenuItem openFolderMenuItem;
-    @FXML
-    private MenuItem closeMenuItem;
-    @FXML
-    private MenuItem exitMenuItem;
+    @FXML private MenuItem openFileMenuItem;
+    @FXML private MenuItem openFolderMenuItem;
+    @FXML private MenuItem closeMenuItem;
+    @FXML private MenuItem exitMenuItem;
 
     //View Menu Items
-    @FXML
-    private MenuItem showFilesMenuAction;
-    @FXML
-    private MenuItem showResultMenuAction;
+    @FXML private MenuItem showFilesMenuAction;
+    @FXML private MenuItem showResultMenuAction;
 
     //Controllers
-    @FXML
-    static MainController mainController;
+    @FXML static MainController mainController;
 
     private static Logger debugger;
     private ProjectWatcher projectWatcherService;
@@ -92,6 +75,7 @@ public class MainController implements Initializable {
 
     private static final int FILE_PANE_INDEX = 0;
     private static final int RESULT_PANE_INDEX = 0;
+    private static final int NOT_FOUND_INDEX = -1;
     private static final String DEBUG_TAG = MainController.class.getSimpleName();
     private static final int THREAD_AVAILABLE_NUMBER = Runtime.getRuntime().availableProcessors();
     private final Image PROJECT_DIR = new Image(getClass().getResourceAsStream("/astro/res/icons/folder/main_folder.png"));
@@ -140,7 +124,7 @@ public class MainController implements Initializable {
     private void showNewFileDialog() {
         if (Objects.nonNull(filesTreeView.getTreeItem(0))) {
             int directoryIndex = filesTreeView.getSelectionModel().getSelectedIndex();
-            if (directoryIndex != -1) {
+            if (directoryIndex != NOT_FOUND_INDEX) {
                 TreeItem<Source> directory = filesTreeView.getSelectionModel().getSelectedItem();
                 Source dirSource = directory.getValue();
                 File dirFile = dirSource.getFile();
@@ -175,7 +159,7 @@ public class MainController implements Initializable {
     private void showNewClassDialog() {
         if (Objects.nonNull(filesTreeView.getTreeItem(0))) {
             int directoryIndex = filesTreeView.getSelectionModel().getSelectedIndex();
-            if (directoryIndex != -1) {
+            if (directoryIndex != NOT_FOUND_INDEX) {
                 TreeItem<Source> directory = filesTreeView.getSelectionModel().getSelectedItem();
                 Source dirSource = directory.getValue();
                 File dirFile = dirSource.getFile();
@@ -222,7 +206,7 @@ public class MainController implements Initializable {
                 .parallelStream()
                 .collect(Collectors.toList());
         for (File file : currentDropped) {
-            if (sourceStream.indexOf(new Source(file)) == -1) {
+            if (sourceStream.indexOf(new Source(file)) == NOT_FOUND_INDEX) {
                 String fileName = file.getName();
                 if (fileName.endsWith(".java"))
                     executorService.execute(() -> openSourceInTab(file));
