@@ -200,6 +200,7 @@ public class MainController implements Initializable {
         intent.showAnotherView(viewPath, title, stylePath);
     }
 
+    //TODO : Make Class to make easy to support all types of files extension
     private void onCodeLayoutDragDropped(DragEvent event) {
         List<File> currentDropped = event.getDragboard().getFiles();
         List<Source> sourceStream = openedFilesList.getItems()
@@ -224,6 +225,7 @@ public class MainController implements Initializable {
         }
     }
 
+    //TODO : Make Class to make easy to support all types of files extension
     private void onOpenFileMenuAction() {
         File outputFile = FileManager.openSourceFile("Open Java File");
         if (outputFile != null)
@@ -366,6 +368,7 @@ public class MainController implements Initializable {
         }
     };
 
+    //TODO : Make Class to make easy to support all types of files extension
     private ChangeListener<TreeItem> onFileSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
             if (newValue.getValue().toString().endsWith(".java")) {
