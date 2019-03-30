@@ -7,15 +7,12 @@ import java.io.IOException;
 
 public class Executor {
 
+    //TODO : Make Executor support 2 types of run (with / without lib folder)
+
     private String codeResult;
 
     /**
      * @param javaCode : Java File Code to Compile and Execute it
-     * @return : The java code output
-     */
-    /**
-     * @param javaCode : Java File Code to Compile and Execute it
-     * @return : The java code output
      */
     void executeJava(File javaCode, OnExecuteListener listener) {
         try {
@@ -38,8 +35,6 @@ public class Executor {
     /**
      * @param javaFile : Java File Code to Compile it to byte code file
      * @return : state to check if file compile is done or not
-     * @throws InterruptedException
-     * @throws IOException
      */
     private int codeCompile(File javaFile) throws InterruptedException, IOException {
         String javaClassName = javaFile.getName();
@@ -59,8 +54,6 @@ public class Executor {
     /**
      * @param javaCode : ByteCode file to execute it
      * @return : state to check if execute is done or not
-     * @throws InterruptedException
-     * @throws IOException
      */
     private int codeRun(File javaCode) throws InterruptedException, IOException {
         String javaCodeName = javaCode.getName().replaceAll(".java", "");
