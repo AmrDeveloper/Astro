@@ -145,19 +145,19 @@ class EditorController {
         while (matcher.find()) {
             String styleClass =
                     matcher.group("KEYWORD") != null ? "keyword" :
-                            matcher.group("PAREN") != null ? "paren" :
-                                    matcher.group("BRACE") != null ? "brace" :
-                                            matcher.group("BRACKET") != null ? "bracket" :
-                                                    matcher.group("SEMICOLON") != null ? "semicolon" :
-                                                            matcher.group("CAST") != null ? "cast" :
-                                                                    matcher.group("STRING") != null ? "string" :
-                                                                            matcher.group("COMMENT") != null ? "comment" :
-                                                                                    matcher.group("ANNOTATION") != null ? "annotation" :
-                                                                                            matcher.group("OPERATION") != null ? "operation" :
-                                                                                                    matcher.group("HEX") != null ? "hex" :
-                                                                                                            matcher.group("NUMBER") != null ? "number" :
-                                                                                                                    matcher.group("METHOD") != null ? "method" :
-                                                                                                                            null; /* never happens */
+                    matcher.group("PAREN") != null ? "paren" :
+                    matcher.group("BRACE") != null ? "brace" :
+                    matcher.group("BRACKET") != null ? "bracket" :
+                    matcher.group("SEMICOLON") != null ? "semicolon" :
+                    matcher.group("CAST") != null ? "cast" :
+                    matcher.group("STRING") != null ? "string" :
+                    matcher.group("COMMENT") != null ? "comment" :
+                    matcher.group("ANNOTATION") != null ? "annotation" :
+                    matcher.group("OPERATION") != null ? "operation" :
+                    matcher.group("HEX") != null ? "hex" :
+                    matcher.group("NUMBER") != null ? "number" :
+                    matcher.group("METHOD") != null ? "method" :
+                    null; /* never happens */
             assert styleClass != null;
             spansBuilder.add(Collections.emptyList(), matcher.start() - lastKeywordEnd);
             spansBuilder.add(Collections.singleton(styleClass), matcher.end() - matcher.start());
