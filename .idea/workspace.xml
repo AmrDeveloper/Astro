@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/EditorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/EditorController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="153" column="66" lean-forward="true" selection-start-line="153" selection-start-column="66" selection-end-line="153" selection-end-column="66" />
+            <state relative-caret-position="476">
+              <caret line="154" column="57" selection-start-line="154" selection-start-column="57" selection-end-line="154" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8892#8893#0" expanded="true" />
@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+            <state relative-caret-position="744">
+              <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,9 +84,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/astro/executor/Executor.java" />
-        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
         <option value="$PROJECT_DIR$/src/astro/styles/editor_style.css" />
         <option value="$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
       </list>
     </option>
   </component>
@@ -517,18 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="153" column="66" lean-forward="true" selection-start-line="153" selection-start-column="66" selection-end-line="153" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8892#8893#0" expanded="true" />
-            <element signature="e#8959#8960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/styles/editor_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -538,10 +526,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="49" column="63" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+        <state relative-caret-position="744">
+          <caret line="57" column="6" lean-forward="true" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="154" column="57" selection-start-line="154" selection-start-column="57" selection-end-line="154" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8892#8893#0" expanded="true" />
+            <element signature="e#8959#8960#0" expanded="true" />
           </folding>
         </state>
       </provider>

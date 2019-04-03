@@ -151,6 +151,8 @@ class EditorController {
                     matcher.group("SEMICOLON") != null ? "semicolon" :
                     matcher.group("CAST") != null ? "cast" :
                     matcher.group("STRING") != null ? "string" :
+                    matcher.group("TODO") != null ? "todo" :
+                    matcher.group("WARN") != null ? "warn" :
                     matcher.group("COMMENT") != null ? "comment" :
                     matcher.group("ANNOTATION") != null ? "annotation" :
                     matcher.group("OPERATION") != null ? "operation" :
