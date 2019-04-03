@@ -22,6 +22,7 @@ Free and Open Source Java IDE
 - Files Drag Drop
 - Run Single Java File
 - Auto Comment and un Comment selected Code
+- Comments multi colors like TODO and WARN comment
 - Brackets and Quotes Auto Complete
 - Project Files Change Listener
 
