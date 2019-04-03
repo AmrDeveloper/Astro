@@ -44,6 +44,11 @@
  	-fx-font-weight: bold;
 }
 
+.styled-text-area .text.warn {
+  	-fx-fill: #FF0000;
+  	-fx-font-weight: bold;
+}
+
 .styled-text-area .text.comment {
  	-fx-fill: #C0C0C0;
 }
