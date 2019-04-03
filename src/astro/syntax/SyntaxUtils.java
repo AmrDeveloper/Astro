@@ -40,12 +40,14 @@ public class SyntaxUtils {
     private static final String METHOD_PATTERN = "\\.[a-zA-Z0-9_]+";
 
     public static final Pattern PATTERN = Pattern.compile(
-            "(?<KEYWORD>" + KEYWORD_PATTERN + ")"
+                      "(?<KEYWORD>" + KEYWORD_PATTERN + ")"
                     + "|(?<PAREN>" + PAREN_PATTERN + ")"
                     + "|(?<BRACE>" + BRACE_PATTERN + ")"
                     + "|(?<BRACKET>" + BRACKET_PATTERN + ")"
                     + "|(?<SEMICOLON>" + SEMICOLON_PATTERN + ")"
                     + "|(?<STRING>" + STRING_PATTERN + ")"
+                    + "|(?<TODO>" + TODO_SINGLE_COMMENT_PATTERN + ")"
+                    + "|(?<WARN>" + WARN_SINGLE_COMMENT_PATTERN + ")"
                     + "|(?<COMMENT>" + COMMENT_PATTERN + ")"
                     + "|(?<ANNOTATION>" + ANNOTATION_PATTERN + ")"
                     + "|(?<CAST>" + CAST_PATTERN + ")"
