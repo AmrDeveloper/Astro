@@ -39,9 +39,14 @@
     -fx-fill: #e6da74;
 }
 
+.styled-text-area .text.todo {
+ 	-fx-fill: #40E0D0;
+ 	-fx-font-weight: bold;
+}
+
 .styled-text-area .text.comment {
  	-fx-fill: #C0C0C0;
- }
+}
 
 .styled-text-area .text.annotation {
 	-fx-fill: #69d7ee;
