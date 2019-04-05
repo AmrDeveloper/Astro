@@ -55,6 +55,11 @@ public class SpaceSensors {
         }
     }
 
+    /**
+     * @param codeArea : Code View
+     * @param position : Current Caret Position in code file
+     * @return : true if new position is valid
+     */
     private static boolean isValidPosition(CodeArea codeArea, int position) {
         return position > 1 && position < codeArea.getLength();
     }
