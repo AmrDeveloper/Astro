@@ -16,7 +16,7 @@ public class SpaceSensors {
             if (lastChar == OPEN_CURLY_BRACES && nextChar == CLOSE_CURLY_BRACES) {
                 addSpaceBetweenCurlyBraces(codeArea, position);
             } else if (lastChar == CLOSE_CURLY_BRACES) {
-                addSpaceAfterCloseCurlyBracee(codeArea, position);
+                addSpaceAfterCloseCurlyBraces(codeArea, position);
             } else if (lastChar == SEMICOLON) {
                 addSpaceAfterSemiColon(codeArea, position);
             }
@@ -37,7 +37,7 @@ public class SpaceSensors {
         codeArea.moveTo(newCursorPosition);
     }
 
-    private static void addSpaceAfterCloseCurlyBracee(CodeArea codeArea, int position) {
+    private static void addSpaceAfterCloseCurlyBraces(CodeArea codeArea, int position) {
         String currentLine = codeArea.getText(codeArea.getCurrentParagraph() - 1);
         int spaceNumber = currentLine.lastIndexOf(CLOSE_CURLY_BRACES);
         if (spaceNumber > 0) {
