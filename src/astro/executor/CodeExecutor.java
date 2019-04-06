@@ -3,6 +3,7 @@ package astro.executor;
 import javafx.scene.control.TextArea;
 
 import java.io.File;
+import java.util.Date;
 import java.util.Objects;
 
 public class CodeExecutor {
@@ -13,19 +14,19 @@ public class CodeExecutor {
                 new Executor().executeJava(source, new OnExecuteListener() {
                     @Override
                     public void onCompileFailure() {
-                        String message = "Compile is Failure\n";
+                        String message = "Compile is Failure\n" + new Date().toString();
                         outputArea.setText(message);
                     }
 
                     @Override
                     public void onExecutorFailure() {
-                        String message = "Build is Failure\n";
+                        String message = "Build is Failure\n" + new Date().toString();
                         outputArea.setText(message);
                     }
 
                     @Override
                     public void onExecutorSuccess(String output) {
-                        String message = "Build is Success\n".concat(output);
+                        String message = "Build is Success\n" + new Date().toString() + "\n" .concat(output);
                         outputArea.setText(message);
                     }
                 });
