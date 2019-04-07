@@ -5,10 +5,12 @@ import javafx.scene.image.ImageView;
 
 public class ImageUtils {
 
+    public static final int ICON_SIZE = 16;
+
     public static ImageView buildImageView(Image image) {
         ImageView imageView = new ImageView();
-        imageView.setFitHeight(16);
-        imageView.setFitWidth(16);
+        imageView.setFitHeight(ICON_SIZE);
+        imageView.setFitWidth(ICON_SIZE);
         imageView.setSmooth(true);
         imageView.setImage(image);
         return imageView;
