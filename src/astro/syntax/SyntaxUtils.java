@@ -31,7 +31,7 @@ public class SyntaxUtils {
     private static final String SEMICOLON_PATTERN = "\\;";
     private static final String STRING_PATTERN = "\"([^\"\\\\]|\\\\.)*\"";
     private static final String TODO_SINGLE_COMMENT_PATTERN = "//TODO[^\n]*";
-    private static final String WARN_SINGLE_COMMENT_PATTERN = "//WARN:[^\n]*";
+    private static final String WARN_SINGLE_COMMENT_PATTERN = "//WARN[^\n]*";
     private static final String COMMENT_PATTERN = "//[^\n]*" + "|" + "/\\*(.|\\R)*?\\*/";
     private static final String ANNOTATION_PATTERN = "@.[a-zA-Z0-9]+";
     private static final String OPERATION_PATTERN = ":|==|>|<|!=|>=|<=|->|=|>|<|%|-|-=|%=|\\+|\\-|\\-=|\\+=|\\^|\\&|\\|::|\\?|\\*";
