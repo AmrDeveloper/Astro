@@ -363,7 +363,8 @@ public class MainController implements Initializable {
     private ChangeListener<Tab> onTabSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
             if (newValue.getText().endsWith(".java")) {
-
+                //TODO: Get all TODO and WARN comments in File code
+                //TODO: Show list in TODO Bar
             }
         }
     };
