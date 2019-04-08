@@ -13,6 +13,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -365,6 +366,8 @@ public class MainController implements Initializable {
             if (newValue.getText().endsWith(".java")) {
                 //TODO: Get all TODO and WARN comments in File code
                 //TODO: Show list in TODO Bar
+                //CodeArea currentCodeArea = (CodeArea) ((Parent) newValue.getContent()).getChildrenUnmodifiable().get(0);
+
             }
         }
     };

@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/executor/CodeExecutor$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/executor/CodeExecutor$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/executor/CodeExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/executor/CodeExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/syntax/SyntaxUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/syntax/SyntaxUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/ImageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/utils/ImageUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/syntax/SyntaxUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="69" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,13 +85,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="astro" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Astro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="astro" type="462c0819:PsiDirectoryNode" />
-              <item name="syntax" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -183,9 +156,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16747573" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16747573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -194,13 +166,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22348917" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" weight="0.22348917" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5008091" side_tool="true" weight="0.22348917" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
