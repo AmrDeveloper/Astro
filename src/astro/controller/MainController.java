@@ -44,6 +44,9 @@ public class MainController implements Initializable {
     @FXML private SplitPane mainSplitPane;
     @FXML private SplitPane codeSplitPane;
 
+    //FX Views Group
+    @FXML private ComboBox<String> tasksComboBox;
+    @FXML private ListView<String> tasksListView;
     @FXML private ListView<Source> openedFilesList;
     @FXML private TreeView<Source> filesTreeView;
     @FXML private TreeView<String> analysisTreeView;
