@@ -16,9 +16,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+            <state relative-caret-position="-1534">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
+                <element signature="e#2930#3710#0" />
+                <element signature="e#3938#4053#0" />
+                <element signature="e#4185#4292#0" />
                 <element signature="e#3716#3874#0" />
                 <element signature="e#3880#4622#0" />
                 <element signature="e#4628#6343#0" />
@@ -66,7 +69,11 @@
                 <element signature="e#14952#15182#1" />
                 <element signature="e#15037#15172#1" />
                 <element signature="e#15356#15883#0" />
+                <element signature="e#15529#15679#1" />
+                <element signature="e#15727#15877#1" />
                 <element signature="e#15250#15641#0" />
+                <element signature="e#15327#15635#1" />
+                <element signature="e#15383#15625#1" />
                 <element signature="e#15787#16469#0" />
                 <element signature="e#15864#16463#1" />
                 <element signature="e#15932#16068#1" />
@@ -144,42 +151,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Astro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Astro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Astro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="astro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Astro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="astro" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554860191694" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554934207776" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -647,9 +622,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="116" column="8" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+        <state relative-caret-position="-1534">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
+            <element signature="e#2930#3710#0" />
+            <element signature="e#3938#4053#0" />
+            <element signature="e#4185#4292#0" />
             <element signature="e#3716#3874#0" />
             <element signature="e#3880#4622#0" />
             <element signature="e#4628#6343#0" />
@@ -697,7 +675,11 @@
             <element signature="e#14952#15182#1" />
             <element signature="e#15037#15172#1" />
             <element signature="e#15356#15883#0" />
+            <element signature="e#15529#15679#1" />
+            <element signature="e#15727#15877#1" />
             <element signature="e#15250#15641#0" />
+            <element signature="e#15327#15635#1" />
+            <element signature="e#15383#15625#1" />
             <element signature="e#15787#16469#0" />
             <element signature="e#15864#16463#1" />
             <element signature="e#15932#16068#1" />
