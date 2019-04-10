@@ -10,6 +10,7 @@ import astro.utils.*;
 import com.google.common.io.Files;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -35,6 +36,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MainController implements Initializable {
 
@@ -96,6 +98,7 @@ public class MainController implements Initializable {
         executorService = Executors.newFixedThreadPool(THREAD_AVAILABLE_NUMBER);
         debugger = Logger.getLogger(DEBUG_TAG);
 
+        comboBoxSettings();
         onMenuItemsActions();
         openedListSettings();
 
@@ -107,6 +110,15 @@ public class MainController implements Initializable {
         codeAreaLayout.getSelectionModel().selectedItemProperty().addListener(onTabSelectChangeListener);
 
         filesTreeView.getSelectionModel().selectedItemProperty().addListener(onFileSelectChangeListener);
+    }
+
+    private void comboBoxSettings(){
+        tasksComboBox.getItems().addAll(TODO_COMMENT,WARN_COMMENT);
+        tasksComboBox.getSelectionModel().select(0);
+        tasksComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
+            currentTaskType = newValue;
+            bindTasksInList();
+        });
     }
 
     private void openedListSettings() {
@@ -370,13 +382,23 @@ public class MainController implements Initializable {
         }
     }
 
+    private void bindTasksInList(){
+        tasksListView.getItems().clear();
+        String code = currentCodeArea.getText();
+        if (currentTaskType.equals(TODO_COMMENT)) {
+            Stream<String> tasks = TaskMatcher.getTodoTasks(code);
+            tasks.forEach(task -> tasksListView.getItems().add(task));
+        } else if (currentTaskType.equals(WARN_COMMENT)) {
+            Stream<String> tasks = TaskMatcher.getWarnTasks(code);
+            tasks.forEach(task -> tasksListView.getItems().add(task));
+        }
+    }
+
     private ChangeListener<Tab> onTabSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
             if (newValue.getText().endsWith(".java")) {
-                //TODO: Get all TODO and WARN comments in File code
-                //TODO: Show list in TODO Bar
                 currentCodeArea = (CodeArea) ((Parent) newValue.getContent()).getChildrenUnmodifiable().get(0);
-
+                bindTasksInList();
             }
         }
     };
