@@ -3,6 +3,7 @@ package astro.controller;
 import astro.analysis.SyntaxAnalysis;
 import astro.constants.Icons;
 import astro.model.Source;
+import astro.model.Task;
 import astro.service.FileService;
 import astro.service.ProjectWatcher;
 import astro.ui.DialogUtils;
@@ -47,7 +48,7 @@ public class MainController implements Initializable {
 
     //FX Views Group
     @FXML private ComboBox<String> tasksComboBox;
-    @FXML private ListView<String> tasksListView;
+    @FXML private ListView<Task> tasksListView;
     @FXML private ListView<Source> openedFilesList;
     @FXML private TreeView<Source> filesTreeView;
     @FXML private TreeView<String> analysisTreeView;
@@ -385,10 +386,10 @@ public class MainController implements Initializable {
         tasksListView.getItems().clear();
         String code = currentCodeArea.getText();
         if (currentTaskType.equals(TODO_COMMENT)) {
-            Stream<String> tasks = TaskMatcher.getTodoTasks(code);
+            Stream<Task> tasks = TaskMatcher.getTodoTasks(code);
             tasks.forEach(task -> tasksListView.getItems().add(task));
         } else if (currentTaskType.equals(WARN_COMMENT)) {
-            Stream<String> tasks = TaskMatcher.getWarnTasks(code);
+            Stream<Task> tasks = TaskMatcher.getWarnTasks(code);
             tasks.forEach(task -> tasksListView.getItems().add(task));
         }
     }
