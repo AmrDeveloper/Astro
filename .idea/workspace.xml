@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +14,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+            <state relative-caret-position="693">
+              <caret line="373" column="53" selection-start-line="373" selection-start-column="53" selection-end-line="373" selection-end-column="53" />
               <folding>
                 <element signature="e#2863#3643#0" />
                 <element signature="e#3649#3807#0" />
@@ -66,9 +64,6 @@
                 <element signature="e#14719#15121#0" />
                 <element signature="e#14885#15115#1" />
                 <element signature="e#14970#15105#1" />
-                <element signature="e#15183#15585#0" />
-                <element signature="e#15260#15579#1" />
-                <element signature="e#15334#15385#0" />
                 <element signature="e#15731#16413#0" />
                 <element signature="e#15808#16407#1" />
                 <element signature="e#15876#16012#1" />
@@ -181,7 +176,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554859629041" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554859766985" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -649,8 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="286" column="37" selection-start-line="286" selection-start-column="37" selection-end-line="286" selection-end-column="37" />
+        <state relative-caret-position="693">
+          <caret line="373" column="53" selection-start-line="373" selection-start-column="53" selection-end-line="373" selection-end-column="53" />
           <folding>
             <element signature="e#2863#3643#0" />
             <element signature="e#3649#3807#0" />
@@ -699,9 +694,6 @@
             <element signature="e#14719#15121#0" />
             <element signature="e#14885#15115#1" />
             <element signature="e#14970#15105#1" />
-            <element signature="e#15183#15585#0" />
-            <element signature="e#15260#15579#1" />
-            <element signature="e#15334#15385#0" />
             <element signature="e#15731#16413#0" />
             <element signature="e#15808#16407#1" />
             <element signature="e#15876#16012#1" />

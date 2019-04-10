@@ -76,12 +76,16 @@ public class MainController implements Initializable {
     private SyntaxAnalysis syntaxAnalysis;
     private ExecutorService executorService;
 
+    private String currentTaskType = TODO_COMMENT;
+
     private boolean isFilesPaneVisible = true;
     private boolean isResultPaneVisible = true;
 
     private static final int FILE_PANE_INDEX = 0;
     private static final int RESULT_PANE_INDEX = 0;
     private static final int NOT_FOUND_INDEX = -1;
+    private static final String TODO_COMMENT = "TODO";
+    private static final String WARN_COMMENT = "WARN";
     private static final String DEBUG_TAG = MainController.class.getSimpleName();
     private static final int THREAD_AVAILABLE_NUMBER = Runtime.getRuntime().availableProcessors();
     private final Image PROJECT_DIR = new Image(getClass().getResourceAsStream("/astro/res/icons/folder/main_folder.png"));
