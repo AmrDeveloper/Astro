@@ -9,6 +9,8 @@ import java.util.stream.Collectors;
 
 public class AutoComplete {
 
+    private static final int LIST_ITEM_HEIGHT = 30;
+    private static final int LIST_MAX_HEIGHT = 120;
     private static final int WORD_LENGTH_LIMIT = 45;
 
     public static String getQuery(CodeArea codeArea, int position) {
@@ -25,7 +27,7 @@ public class AutoComplete {
         ListView suggestionsList = new ListView<>();
         suggestionsList.getItems().clear();
         suggestionsList.getItems().addAll(FXCollections.observableList(suggestions));
-        int listViewLength = (suggestions.size() * 30 > 120) ? 120 : suggestions.size() * 30;
+        int listViewLength = ((suggestions.size() * LIST_ITEM_HEIGHT) > LIST_MAX_HEIGHT) ? LIST_MAX_HEIGHT : suggestions.size() * LIST_ITEM_HEIGHT;
         suggestionsList.setPrefHeight(listViewLength);
         return suggestionsList;
     }
