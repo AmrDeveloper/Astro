@@ -27,7 +27,8 @@ public class AutoComplete {
         ListView suggestionsList = new ListView<>();
         suggestionsList.getItems().clear();
         suggestionsList.getItems().addAll(FXCollections.observableList(suggestions));
-        int listViewLength = ((suggestions.size() * LIST_ITEM_HEIGHT) > LIST_MAX_HEIGHT) ? LIST_MAX_HEIGHT : suggestions.size() * LIST_ITEM_HEIGHT;
+        int suggestionsNum = suggestions.size();
+        int listViewLength = ((suggestionsNum * LIST_ITEM_HEIGHT) > LIST_MAX_HEIGHT) ? LIST_MAX_HEIGHT : suggestionsNum * LIST_ITEM_HEIGHT;
         suggestionsList.setPrefHeight(listViewLength);
         return suggestionsList;
     }
