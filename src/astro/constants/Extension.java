@@ -1,4 +1,4 @@
-package astro.utils;
+package astro.constants;
 
 public class Extension {
     public static final String JAVA = ".JAVA";

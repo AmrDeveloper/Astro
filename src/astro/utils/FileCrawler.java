@@ -1,5 +1,6 @@
 package astro.utils;
 
+import astro.constants.Extension;
 import astro.model.Source;
 import javafx.scene.control.TreeItem;
 import javafx.scene.image.Image;

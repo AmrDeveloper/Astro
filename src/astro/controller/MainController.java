@@ -1,6 +1,7 @@
 package astro.controller;
 
 import astro.analysis.SyntaxAnalysis;
+import astro.constants.Extension;
 import astro.constants.Icons;
 import astro.model.Source;
 import astro.model.Task;
