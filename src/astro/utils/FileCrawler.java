@@ -54,17 +54,17 @@ public class FileCrawler {
                     root.getChildren().add(treeItem);
                 }
             } else {
-                if (file.getName().endsWith(".java")) {
+                if (file.getName().endsWith(Extension.JAVA)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(JAVA_FILE)));
-                } else if (file.getName().endsWith(".html")) {
+                } else if (file.getName().endsWith(Extension.HTML)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(HTML_FILE)));
-                } else if (file.getName().endsWith(".css")) {
+                } else if (file.getName().endsWith(Extension.CSS)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(CSS_FILE)));
-                } else if (file.getName().endsWith(".js")) {
+                } else if (file.getName().endsWith(Extension.JS)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(JS_FILE)));
-                } else if (file.getName().endsWith(".pdf")) {
+                } else if (file.getName().endsWith(Extension.PDF)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(PDF_FILE)));
-                } else if (file.getName().endsWith(".zip")) {
+                } else if (file.getName().endsWith(Extension.ZIP)) {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(ZIP_FILE)));
                 } else {
                     root.getChildren().add(new TreeItem<>(new Source(file), new ImageView(TEXT_FILE)));
@@ -94,17 +94,17 @@ public class FileCrawler {
                 return new TreeItem<>(source, new ImageView(NORMAL_DIR));
             }
         } else {
-            if (source.getName().endsWith(".java")) {
+            if (source.getName().endsWith(Extension.JAVA)) {
                 return new TreeItem<>(source, new ImageView(JAVA_FILE));
-            } else if (source.getName().endsWith(".html")) {
+            } else if (source.getName().endsWith(Extension.HTML)) {
                 return new TreeItem<>(source, new ImageView(HTML_FILE));
-            } else if (source.getName().endsWith(".css")) {
+            } else if (source.getName().endsWith(Extension.CSS)) {
                 return new TreeItem<>(source, new ImageView(CSS_FILE));
-            } else if (source.getName().endsWith(".js")) {
+            } else if (source.getName().endsWith(Extension.JS)) {
                 return new TreeItem<>(source, new ImageView(JS_FILE));
-            } else if (source.getName().endsWith(".pdf")) {
+            } else if (source.getName().endsWith(Extension.PDF)) {
                 return new TreeItem<>(source, new ImageView(PDF_FILE));
-            } else if (source.getName().endsWith(".zip")) {
+            } else if (source.getName().endsWith(Extension.ZIP)) {
                 return new TreeItem<>(source, new ImageView(ZIP_FILE));
             } else {
                 return new TreeItem<>(source, new ImageView(TEXT_FILE));
