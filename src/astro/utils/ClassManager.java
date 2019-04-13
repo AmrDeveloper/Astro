@@ -1,5 +1,7 @@
 package astro.utils;
 
+import astro.constants.ClassKind;
+
 public class ClassManager {
 
     private final static String CLASS_DEFAULT_FORMAT = "public class %s{\n\n}";

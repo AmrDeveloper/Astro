@@ -1,4 +1,4 @@
-package astro.utils;
+package astro.constants;
 
 public enum  ClassKind {
     CLASS,

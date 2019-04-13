@@ -1,6 +1,6 @@
 package astro.controller;
 
-import astro.utils.ClassKind;
+import astro.constants.ClassKind;
 import astro.utils.ClassManager;
 import astro.utils.FileManager;
 import astro.utils.Intent;
