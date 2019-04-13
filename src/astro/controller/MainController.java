@@ -231,11 +231,11 @@ public class MainController implements Initializable {
         for (File file : currentDropped) {
             if (sourceStream.indexOf(new Source(file)) == NOT_FOUND_INDEX) {
                 String fileName = file.getName();
-                if (fileName.endsWith(".java"))
+                if (fileName.endsWith(Extension.JAVA))
                     executorService.execute(() -> openSourceInTab(file));
-                else if (fileName.endsWith(".txt"))
+                else if (fileName.endsWith(Extension.TEXT))
                     executorService.execute(() -> openTextInTab(file));
-                else if (fileName.endsWith(".md"))
+                else if (fileName.endsWith(Extension.MD))
                     executorService.execute(() -> openTextInTab(file));
             }
         }
@@ -251,11 +251,11 @@ public class MainController implements Initializable {
     private void onOpenFileMenuAction() {
         File outputFile = FileManager.openSourceFile("Open Java File");
         if (outputFile != null)
-            if (outputFile.getName().endsWith(".java"))
+            if (outputFile.getName().endsWith(Extension.JAVA))
                 executorService.execute(() -> openSourceInTab(outputFile));
-            else if (outputFile.getName().endsWith(".txt"))
+            else if (outputFile.getName().endsWith(Extension.TEXT))
                 executorService.execute(() -> openTextInTab(outputFile));
-            else if (outputFile.getName().endsWith(".md"))
+            else if (outputFile.getName().endsWith(Extension.MD))
                 executorService.execute(() -> openTextInTab(outputFile));
     }
 
@@ -396,7 +396,7 @@ public class MainController implements Initializable {
 
     private ChangeListener<Tab> onTabSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
-            if (newValue.getText().endsWith(".java")) {
+            if (newValue.getText().endsWith(Extension.JAVA)) {
                 currentCodeArea = (CodeArea) ((Parent) newValue.getContent()).getChildrenUnmodifiable().get(0);
                 bindTasksInList();
             }
@@ -406,13 +406,13 @@ public class MainController implements Initializable {
     //TODO : Make Class to make easy to support all types of files extension
     private ChangeListener<TreeItem> onFileSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
-            if (newValue.getValue().toString().endsWith(".java")) {
+            if (newValue.getValue().toString().endsWith(Extension.JAVA)) {
                 Source javaSource = (Source) newValue.getValue();
                 openSourceInTab(javaSource.getFile());
-            } else if (newValue.getValue().toString().endsWith(".txt")) {
+            } else if (newValue.getValue().toString().endsWith(Extension.TEXT)) {
                 Source textSource = (Source) newValue.getValue();
                 openTextInTab(textSource.getFile());
-            } else if (newValue.getValue().toString().endsWith(".md")) {
+            } else if (newValue.getValue().toString().endsWith(Extension.MD)) {
                 Source textSource = (Source) newValue.getValue();
                 openTextInTab(textSource.getFile());
             }
