@@ -1,6 +1,7 @@
 package astro.controller;
 
 import astro.constants.ClassKind;
+import astro.ui.DialogUtils;
 import astro.utils.ClassManager;
 import astro.utils.FileManager;
 import astro.utils.Intent;
@@ -48,6 +49,13 @@ public class NewClassController implements Initializable {
     private void createButtonAction() {
         String classType = kindComboBox.getSelectionModel().getSelectedItem();
         String className = classNameText.getText();
+
+        if(className.isEmpty()){
+            String errorMessage = "Insert Class name first";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
+            return;
+        }
+
         String fullClassName = (className.endsWith(".java")) ? className : className.concat(".java");
         String newClassPath = directoryPath.concat(File.separator).concat(fullClassName);
 
