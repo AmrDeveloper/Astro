@@ -1,5 +1,6 @@
 package astro.controller;
 
+import astro.ui.DialogUtils;
 import astro.utils.FileManager;
 import astro.utils.Intent;
 import javafx.fxml.FXML;
@@ -43,7 +44,8 @@ public class NewFileController implements Initializable {
             File source = FileManager.createNewFile(newClassPath);
             cancelButtonAction();
         }else{
-            fileNameText.setText("Insert File name first");
+            String warnMessage = "Insert File name first";
+            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG,null,warnMessage);
         }
     }
 
