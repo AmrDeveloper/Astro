@@ -38,15 +38,15 @@ public class NewFileController implements Initializable {
 
     private void createButtonAction() {
         String className = fileNameText.getText();
-        if(!className.isEmpty()){
-            String newClassPath = directoryPath.concat(File.separator).concat(className);
-            System.out.println(newClassPath);
-            File source = FileManager.createNewFile(newClassPath);
-            cancelButtonAction();
-        }else{
+        if (className.isEmpty()) {
             String warnMessage = "Insert File name first";
-            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG,null,warnMessage);
+            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
+            return;
         }
+        String newClassPath = directoryPath.concat(File.separator).concat(className);
+        System.out.println(newClassPath);
+        File source = FileManager.createNewFile(newClassPath);
+        cancelButtonAction();
     }
 
     private void cancelButtonAction() {
