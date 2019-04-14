@@ -66,6 +66,27 @@ public class Intent extends IntentStorage {
         }
     }
 
+    @Nullable
+    public <T> T showAnotherView(String viewLocation, String title, String style, boolean onTop) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(viewLocation));
+            Parent root = loader.load();
+            T controller = loader.getController();
+            Stage stage = new Stage();
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(style);
+            stage.setScene(scene);
+            stage.setTitle(title);
+            stage.setAlwaysOnTop(onTop);
+            stage.getIcons().add(Astro.APP_ICON);
+            stage.show();
+            return controller;
+        } catch (IOException e) {
+            debug.warning("Can't Open location : " + viewLocation);
+            return null;
+        }
+    }
+
 
     @Nullable
     public <T> T showAnotherView(String viewLocation, String title, Image icon) {
