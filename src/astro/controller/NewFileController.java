@@ -39,8 +39,8 @@ public class NewFileController implements Initializable {
     private void createButtonAction() {
         String className = fileNameText.getText();
         if (className.isEmpty()) {
-            String warnMessage = "Insert File name first";
-            DialogUtils.createWarningDialog(DialogUtils.WARNING_DIALOG, null, warnMessage);
+            String errorMessage = "Insert File name first";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG, null, errorMessage);
             return;
         }
         String newClassPath = directoryPath.concat(File.separator).concat(className);

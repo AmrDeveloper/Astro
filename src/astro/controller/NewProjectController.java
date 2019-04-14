@@ -41,6 +41,8 @@ public class NewProjectController implements Initializable {
     private void createNewProject(){
         String projectName = projectNameText.getText().trim();
         String projectPath = projectPathText.getText().trim();
+
+        //TODO : replace set text with error dialog
         if(projectName.isEmpty()){
             projectNameText.setText("Invalid Project Name");
             return;
