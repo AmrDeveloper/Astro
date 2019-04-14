@@ -43,9 +43,11 @@ public class NewProjectController implements Initializable {
         String projectPath = projectPathText.getText().trim();
         if(projectName.isEmpty()){
             projectNameText.setText("Invalid Project Name");
+            return;
         }
         if(projectPath.isEmpty() || projectPathFile.canWrite()){
             projectPathText.setText("Invalid Project Path");
+            return;
         }
 
         String projectFullPath = projectPath.concat(File.separator).concat(projectName);
