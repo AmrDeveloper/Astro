@@ -1,5 +1,6 @@
 package astro.controller;
 
+import astro.ui.DialogUtils;
 import astro.utils.FileManager;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -42,13 +43,20 @@ public class NewProjectController implements Initializable {
         String projectName = projectNameText.getText().trim();
         String projectPath = projectPathText.getText().trim();
 
-        //TODO : replace set text with error dialog
-        if(projectName.isEmpty()){
-            projectNameText.setText("Invalid Project Name");
+        boolean isProjectNameInvalid = !projectName.isEmpty();
+        boolean isProjectPathInvalid = !(projectPath.isEmpty() || projectPathFile.canWrite());
+
+        if(isProjectNameInvalid && isProjectPathInvalid){
+            String errorMessage = "Invalid Project Name and Path";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return;
-        }
-        if(projectPath.isEmpty() || projectPathFile.canWrite()){
-            projectPathText.setText("Invalid Project Path");
+        }else if(isProjectNameInvalid){
+            String errorMessage = "Invalid Project Name";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
+            return;
+        }else if(isProjectPathInvalid){
+            String errorMessage = "Invalid Project Path";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
             return;
         }
 
