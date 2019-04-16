@@ -3,7 +3,7 @@
 Free and Open Source Java IDE
  
  
-<img src="https://i.imgur.com/anCLFWF.png" width="600">
+<img src="https://i.imgur.com/cyVNRUt.jpg" width="600">
  
 <img src="https://i.imgur.com/3OduBEd.jpg" width="600">
 
