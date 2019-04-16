@@ -1,7 +1,7 @@
 package astro.constants;
 
 public class Extension {
-    public static final String JAVA = ".JAVA";
+    public static final String JAVA = ".java";
     public static final String HTML = ".html";
     public static final String JS = ".js";
     public static final String CSS = ".css";

@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/constants/Extension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/constants/Extension.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewClassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewClassController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewFileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileCrawler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/Intent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/utils/Intent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/constants/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/constants/Extension.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,13 +22,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
+        <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -74,11 +78,12 @@
         <option value="$PROJECT_DIR$/src/astro/utils/Extension.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/FileCrawler.java" />
         <option value="$PROJECT_DIR$/src/astro/constants/ClassKind.java" />
-        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/Intent.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewClassController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewFileController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
+        <option value="$PROJECT_DIR$/src/astro/constants/Extension.java" />
       </list>
     </option>
   </component>
@@ -122,7 +127,7 @@
               <item name="Astro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="astro" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,7 +202,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12944984" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16262136" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -518,8 +523,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/views/main_view.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,27 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/constants/ClassKind.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="261" column="40" lean-forward="true" selection-start-line="261" selection-start-column="40" selection-end-line="261" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,10 +611,27 @@
     <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
