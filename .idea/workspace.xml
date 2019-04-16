@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/constants/Extension.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/constants/Extension.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewClassController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewClassController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewFileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/controller/NewProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileCrawler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/utils/FileCrawler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Astro/astro/utils/Intent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Astro/astro/utils/Intent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/astro/constants/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/constants/Extension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/MainController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +13,74 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
+        <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="608">
+              <caret line="385" column="23" lean-forward="true" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
+              <folding>
+                <element signature="e#3181#3989#0" />
+                <element signature="e#3995#4325#0" />
+                <element signature="e#4199#4317#0" />
+                <element signature="e#4331#4489#0" />
+                <element signature="e#4495#5237#0" />
+                <element signature="e#5243#6958#0" />
+                <element signature="e#5337#6671#1" />
+                <element signature="e#5477#6362#1" />
+                <element signature="e#5788#5856#1" />
+                <element signature="e#5902#5986#1" />
+                <element signature="e#6368#6661#1" />
+                <element signature="e#6677#6952#1" />
+                <element signature="e#6964#8687#0" />
+                <element signature="e#7059#8400#1" />
+                <element signature="e#7199#8091#1" />
+                <element signature="e#7510#7578#1" />
+                <element signature="e#7624#7708#1" />
+                <element signature="e#8097#8390#1" />
+                <element signature="e#8406#8681#1" />
+                <element signature="e#8693#9011#0" />
+                <element signature="e#9017#9953#0" />
+                <element signature="e#9404#9947#1" />
+                <element signature="e#9481#9937#1" />
+                <element signature="e#9959#10132#0" />
+                <element signature="e#10057#10126#1" />
+                <element signature="e#10138#10783#0" />
+                <element signature="e#10789#10990#0" />
+                <element signature="e#10996#11280#0" />
+                <element signature="e#11286#11374#0" />
+                <element signature="e#11380#11862#0" />
+                <element signature="e#11502#11676#1" />
+                <element signature="e#11682#11856#1" />
+                <element signature="e#11868#12359#0" />
+                <element signature="e#11992#12169#1" />
+                <element signature="e#12175#12353#1" />
+                <element signature="e#12365#12924#0" />
+                <element signature="e#12761#12918#1" />
+                <element signature="e#12851#12908#1" />
+                <element signature="e#12930#14307#0" />
+                <element signature="e#13426#14011#0" />
+                <element signature="e#13791#13939#0" />
+                <element signature="e#14034#14301#0" />
+                <element signature="e#14313#15439#0" />
+                <element signature="e#14611#15143#0" />
+                <element signature="e#14985#15131#0" />
+                <element signature="e#15166#15433#0" />
+                <element signature="e#15853#16374#0" />
+                <element signature="e#16026#16173#1" />
+                <element signature="e#16221#16368#1" />
+                <element signature="e#16436#16754#0" />
+                <element signature="e#16513#16748#1" />
+                <element signature="e#16576#16738#1" />
+                <element signature="e#16900#17604#0" />
+                <element signature="e#16977#17598#1" />
+                <element signature="e#17052#17188#1" />
+                <element signature="e#17255#17389#1" />
+                <element signature="e#17454#17588#1" />
+                <element signature="e#17611#18242#0" />
+                <element signature="e#17700#18236#1" />
+                <element signature="e#17749#17817#1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/astro/model/Task.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/TaskMatcher.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/AutoComplete.java" />
-        <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/Extension.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/FileCrawler.java" />
         <option value="$PROJECT_DIR$/src/astro/constants/ClassKind.java" />
@@ -84,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
         <option value="$PROJECT_DIR$/src/astro/constants/Extension.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -127,14 +182,14 @@
               <item name="Astro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="astro" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,7 +257,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16262136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1699029" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,13 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -581,33 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="164" column="28" selection-start-line="164" selection-start-column="28" selection-end-line="164" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewClassController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="42" column="86" selection-start-line="42" selection-start-column="86" selection-end-line="42" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
@@ -618,20 +639,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+    <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="51">
+          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1033">
+          <caret line="70" column="22" lean-forward="true" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/constants/Extension.java">
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewFileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="44" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
+        <state relative-caret-position="289">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="261" column="32" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="385" column="23" lean-forward="true" selection-start-line="385" selection-start-column="23" selection-end-line="385" selection-end-column="23" />
+          <folding>
+            <element signature="e#3181#3989#0" />
+            <element signature="e#3995#4325#0" />
+            <element signature="e#4199#4317#0" />
+            <element signature="e#4331#4489#0" />
+            <element signature="e#4495#5237#0" />
+            <element signature="e#5243#6958#0" />
+            <element signature="e#5337#6671#1" />
+            <element signature="e#5477#6362#1" />
+            <element signature="e#5788#5856#1" />
+            <element signature="e#5902#5986#1" />
+            <element signature="e#6368#6661#1" />
+            <element signature="e#6677#6952#1" />
+            <element signature="e#6964#8687#0" />
+            <element signature="e#7059#8400#1" />
+            <element signature="e#7199#8091#1" />
+            <element signature="e#7510#7578#1" />
+            <element signature="e#7624#7708#1" />
+            <element signature="e#8097#8390#1" />
+            <element signature="e#8406#8681#1" />
+            <element signature="e#8693#9011#0" />
+            <element signature="e#9017#9953#0" />
+            <element signature="e#9404#9947#1" />
+            <element signature="e#9481#9937#1" />
+            <element signature="e#9959#10132#0" />
+            <element signature="e#10057#10126#1" />
+            <element signature="e#10138#10783#0" />
+            <element signature="e#10789#10990#0" />
+            <element signature="e#10996#11280#0" />
+            <element signature="e#11286#11374#0" />
+            <element signature="e#11380#11862#0" />
+            <element signature="e#11502#11676#1" />
+            <element signature="e#11682#11856#1" />
+            <element signature="e#11868#12359#0" />
+            <element signature="e#11992#12169#1" />
+            <element signature="e#12175#12353#1" />
+            <element signature="e#12365#12924#0" />
+            <element signature="e#12761#12918#1" />
+            <element signature="e#12851#12908#1" />
+            <element signature="e#12930#14307#0" />
+            <element signature="e#13426#14011#0" />
+            <element signature="e#13791#13939#0" />
+            <element signature="e#14034#14301#0" />
+            <element signature="e#14313#15439#0" />
+            <element signature="e#14611#15143#0" />
+            <element signature="e#14985#15131#0" />
+            <element signature="e#15166#15433#0" />
+            <element signature="e#15853#16374#0" />
+            <element signature="e#16026#16173#1" />
+            <element signature="e#16221#16368#1" />
+            <element signature="e#16436#16754#0" />
+            <element signature="e#16513#16748#1" />
+            <element signature="e#16576#16738#1" />
+            <element signature="e#16900#17604#0" />
+            <element signature="e#16977#17598#1" />
+            <element signature="e#17052#17188#1" />
+            <element signature="e#17255#17389#1" />
+            <element signature="e#17454#17588#1" />
+            <element signature="e#17611#18242#0" />
+            <element signature="e#17700#18236#1" />
+            <element signature="e#17749#17817#1" />
+          </folding>
         </state>
       </provider>
     </entry>
