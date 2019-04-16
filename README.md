@@ -7,6 +7,8 @@ Free and Open Source Java IDE
  
 <img src="https://i.imgur.com/3OduBEd.jpg" width="600">
 
+<img src="https://i.imgur.com/Hu6i8Ix.jpg" width="600">
+
 ## Features
 - Open Project
 - Create New File
