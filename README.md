@@ -32,6 +32,3 @@ Free and Open Source Java IDE
 ## Libraries
 ### [Google Java Format](https://github.com/google/google-java-format)
 ### [RichTextFX](https://github.com/FXMisc/RichTextFX)
-
-## Demo
-### [YouTube Video](https://www.youtube.com/watch?v=KAzhfJcP510)
