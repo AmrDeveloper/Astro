@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -12,12 +13,66 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+              <folding>
+                <element signature="method#EditorController#0;class#EditorController#0" />
+                <element signature="method#editorSettings#0;class#EditorController#0" />
+                <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
+                <element signature="e#2471#2747#0" />
+                <element signature="e#2517#2593#1" />
+                <element signature="e#2599#2729#1" />
+                <element signature="method#codeAreaAddLineNumber#0;class#EditorController#0" />
+                <element signature="method#codeAreaMenuItems#0;class#EditorController#0" />
+                <element signature="method#computeHighlightingAsync#0;class#EditorController#0" />
+                <element signature="method#applyHighlighting#0;class#EditorController#0" />
+                <element signature="method#computeHighlighting#0;class#EditorController#0" />
+                <element signature="e#5315#6653#1" />
+                <element signature="method#formatSourceCode#0;class#EditorController#0" />
+                <element signature="e#6958#7229#0" />
+                <element signature="e#7116#7219#1" />
+                <element signature="e#7264#7606#0" />
+                <element signature="e#7454#7535#1" />
+                <element signature="method#saveSourceCode#0;class#EditorController#0" />
+                <element signature="e#7754#7828#1" />
+                <element signature="e#7834#8224#1" />
+                <element signature="e#8061#8212#0" />
+                <element signature="method#openCurrentFolder#0;class#EditorController#0" />
+                <element signature="method#openTerminalHere#0;class#EditorController#0" />
+                <element signature="e#8961#9073#0" />
+                <element signature="e#9130#10973#0" />
+                <element signature="e#9173#10967#1" />
+                <element signature="e#9351#9414#1" />
+                <element signature="e#9420#9476#1" />
+                <element signature="e#9518#10895#1" />
+                <element signature="e#9663#10881#1" />
+                <element signature="e#10035#10861#0" />
+                <element signature="e#10197#10788#0" />
+                <element signature="e#10378#10629#1" />
+                <element signature="e#10635#10762#1" />
+                <element signature="e#10901#10957#1" />
+                <element signature="e#11033#11769#0" />
+                <element signature="e#11437#11763#1" />
+                <element signature="e#11541#11753#1" />
+                <element signature="e#11830#11969#0" />
+                <element signature="e#11892#11963#1" />
+                <element signature="e#12041#12377#0" />
+                <element signature="e#12087#12212#1" />
+                <element signature="e#12241#12371#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="561">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -85,7 +140,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -96,6 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,12 +175,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555174254916" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555608545396" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -187,7 +242,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1699029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13996764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -596,20 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="261" column="32" selection-start-line="261" selection-start-column="16" selection-end-line="261" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="381" column="22" lean-forward="true" selection-start-line="381" selection-start-column="22" selection-end-line="381" selection-end-column="22" />
+        <state relative-caret-position="268">
+          <caret line="88" column="44" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="44" />
           <folding>
             <element signature="e#3181#3989#0" />
             <element signature="e#3995#4325#0" />
@@ -657,28 +702,84 @@
             <element signature="e#14611#15143#0" />
             <element signature="e#14985#15131#0" />
             <element signature="e#15166#15433#0" />
-            <element signature="e#15853#16374#0" />
-            <element signature="e#16026#16173#1" />
-            <element signature="e#16221#16368#1" />
-            <element signature="e#16436#16754#0" />
-            <element signature="e#16513#16748#1" />
-            <element signature="e#16576#16738#1" />
-            <element signature="e#16900#17604#0" />
-            <element signature="e#16977#17598#1" />
-            <element signature="e#17052#17188#1" />
-            <element signature="e#17255#17389#1" />
-            <element signature="e#17454#17588#1" />
-            <element signature="e#17611#18242#0" />
-            <element signature="e#17700#18236#1" />
-            <element signature="e#17749#17817#1" />
+            <element signature="e#15445#16128#0" />
+            <element signature="e#15657#15881#1" />
+            <element signature="e#15736#15871#1" />
+            <element signature="e#15967#16122#1" />
+            <element signature="e#16134#16655#0" />
+            <element signature="e#16307#16454#1" />
+            <element signature="e#16502#16649#1" />
+            <element signature="e#16717#17035#0" />
+            <element signature="e#16794#17029#1" />
+            <element signature="e#16857#17019#1" />
+            <element signature="e#17181#17885#0" />
+            <element signature="e#17258#17879#1" />
+            <element signature="e#17333#17469#1" />
+            <element signature="e#17536#17670#1" />
+            <element signature="e#17735#17869#1" />
+            <element signature="e#17892#18523#0" />
+            <element signature="e#17981#18517#1" />
+            <element signature="e#18030#18098#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+          <folding>
+            <element signature="method#EditorController#0;class#EditorController#0" />
+            <element signature="method#editorSettings#0;class#EditorController#0" />
+            <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
+            <element signature="e#2471#2747#0" />
+            <element signature="e#2517#2593#1" />
+            <element signature="e#2599#2729#1" />
+            <element signature="method#codeAreaAddLineNumber#0;class#EditorController#0" />
+            <element signature="method#codeAreaMenuItems#0;class#EditorController#0" />
+            <element signature="method#computeHighlightingAsync#0;class#EditorController#0" />
+            <element signature="method#applyHighlighting#0;class#EditorController#0" />
+            <element signature="method#computeHighlighting#0;class#EditorController#0" />
+            <element signature="e#5315#6653#1" />
+            <element signature="method#formatSourceCode#0;class#EditorController#0" />
+            <element signature="e#6958#7229#0" />
+            <element signature="e#7116#7219#1" />
+            <element signature="e#7264#7606#0" />
+            <element signature="e#7454#7535#1" />
+            <element signature="method#saveSourceCode#0;class#EditorController#0" />
+            <element signature="e#7754#7828#1" />
+            <element signature="e#7834#8224#1" />
+            <element signature="e#8061#8212#0" />
+            <element signature="method#openCurrentFolder#0;class#EditorController#0" />
+            <element signature="method#openTerminalHere#0;class#EditorController#0" />
+            <element signature="e#8961#9073#0" />
+            <element signature="e#9130#10973#0" />
+            <element signature="e#9173#10967#1" />
+            <element signature="e#9351#9414#1" />
+            <element signature="e#9420#9476#1" />
+            <element signature="e#9518#10895#1" />
+            <element signature="e#9663#10881#1" />
+            <element signature="e#10035#10861#0" />
+            <element signature="e#10197#10788#0" />
+            <element signature="e#10378#10629#1" />
+            <element signature="e#10635#10762#1" />
+            <element signature="e#10901#10957#1" />
+            <element signature="e#11033#11769#0" />
+            <element signature="e#11437#11763#1" />
+            <element signature="e#11541#11753#1" />
+            <element signature="e#11830#11969#0" />
+            <element signature="e#11892#11963#1" />
+            <element signature="e#12041#12377#0" />
+            <element signature="e#12087#12212#1" />
+            <element signature="e#12241#12371#1" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        <state relative-caret-position="561">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
         </state>
       </provider>
     </entry>
