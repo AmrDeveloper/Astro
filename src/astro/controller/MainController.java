@@ -373,17 +373,18 @@ public class MainController implements Initializable {
     }
 
     private void onTabCloseAction(Tab tab) {
-        final int fileListItemCount = openedFilesList.getItems().size();
-        final String tabName = tab.getText();
+        ObservableList<Source> soruceItems = openedFilesList.getItems();
+        int fileListItemCount = soruceItems.size();
+        String tabName = tab.getText();
         for (int i = 0; i < fileListItemCount; i++) {
-            if (openedFilesList.getItems().get(i).getName().equals(tabName)) {
-                openedFilesList.getItems().remove(i);
+            if (soruceItems.get(i).getName().equals(tabName)) {
+                soruceItems.remove(i);
                 openedFilesList.refresh();
                 break;
             }
         }
         boolean isJavaFile = tabName.endsWith(Extension.JAVA);
-        if(isJavaFile){
+        if (isJavaFile) {
             CodeArea codeArea = (CodeArea) ((Parent) tab.getContent()).getChildrenUnmodifiable().get(0);
             codeArea.displaceCaret(0);
         }
