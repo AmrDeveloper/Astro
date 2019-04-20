@@ -373,12 +373,12 @@ public class MainController implements Initializable {
     }
 
     private void onTabCloseAction(Tab tab) {
-        ObservableList<Source> soruceItems = openedFilesList.getItems();
-        int fileListItemCount = soruceItems.size();
+        ObservableList<Source> sourceItems = openedFilesList.getItems();
+        int fileListItemCount = sourceItems.size();
         String tabName = tab.getText();
         for (int i = 0; i < fileListItemCount; i++) {
-            if (soruceItems.get(i).getName().equals(tabName)) {
-                soruceItems.remove(i);
+            if (sourceItems.get(i).getName().equals(tabName)) {
+                sourceItems.remove(i);
                 openedFilesList.refresh();
                 break;
             }
