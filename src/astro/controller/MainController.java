@@ -414,13 +414,14 @@ public class MainController implements Initializable {
     //TODO : Make Class to make easy to support all types of files extension
     private ChangeListener<TreeItem> onFileSelectChangeListener = (observable, oldValue, newValue) -> {
         if (Objects.nonNull(newValue)) {
-            if (newValue.getValue().toString().endsWith(Extension.JAVA)) {
+            String fileName = newValue.getValue().toString();
+            if (fileName.endsWith(Extension.JAVA)) {
                 Source javaSource = (Source) newValue.getValue();
                 openSourceInTab(javaSource.getFile());
-            } else if (newValue.getValue().toString().endsWith(Extension.TEXT)) {
+            } else if (fileName.endsWith(Extension.TEXT)) {
                 Source textSource = (Source) newValue.getValue();
                 openTextInTab(textSource.getFile());
-            } else if (newValue.getValue().toString().endsWith(Extension.MD)) {
+            } else if (fileName.endsWith(Extension.MD)) {
                 Source textSource = (Source) newValue.getValue();
                 openTextInTab(textSource.getFile());
             }

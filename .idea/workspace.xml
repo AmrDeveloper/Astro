@@ -13,31 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="1292">
+              <caret line="192" column="51" selection-start-line="192" selection-start-column="51" selection-end-line="192" selection-end-column="51" />
               <folding>
-                <element signature="method#EditorController#0;class#EditorController#0" />
-                <element signature="method#editorSettings#0;class#EditorController#0" />
-                <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
-                <element signature="e#2471#2747#0" />
-                <element signature="e#2517#2593#1" />
-                <element signature="e#2599#2729#1" />
-                <element signature="method#codeAreaAddLineNumber#0;class#EditorController#0" />
                 <element signature="method#codeAreaMenuItems#0;class#EditorController#0" />
-                <element signature="method#computeHighlightingAsync#0;class#EditorController#0" />
                 <element signature="method#applyHighlighting#0;class#EditorController#0" />
                 <element signature="method#computeHighlighting#0;class#EditorController#0" />
                 <element signature="e#5315#6653#1" />
-                <element signature="method#formatSourceCode#0;class#EditorController#0" />
                 <element signature="e#6958#7229#0" />
                 <element signature="e#7116#7219#1" />
                 <element signature="e#7264#7606#0" />
                 <element signature="e#7454#7535#1" />
-                <element signature="method#saveSourceCode#0;class#EditorController#0" />
                 <element signature="e#7754#7828#1" />
                 <element signature="e#7834#8224#1" />
                 <element signature="e#8061#8212#0" />
@@ -71,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="384" column="9" lean-forward="true" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="9" />
+            <state relative-caret-position="646">
+              <caret line="420" column="31" selection-start-line="420" selection-start-column="31" selection-end-line="420" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3181#3989#0" />
@@ -111,20 +101,12 @@
                 <element signature="e#12365#12924#0" />
                 <element signature="e#12761#12918#1" />
                 <element signature="e#12851#12908#1" />
+                <element signature="e#12930#14307#0" />
                 <element signature="e#13791#13939#0" />
                 <element signature="e#14313#15439#0" />
                 <element signature="e#14611#15143#0" />
                 <element signature="e#14985#15131#0" />
                 <element signature="e#15166#15433#0" />
-                <element signature="e#16134#16655#0" />
-                <element signature="e#16307#16454#1" />
-                <element signature="e#16502#16649#1" />
-                <element signature="e#16717#17035#0" />
-                <element signature="e#16794#17029#1" />
-                <element signature="e#16857#17019#1" />
-                <element signature="e#17892#18523#0" />
-                <element signature="e#17981#18517#1" />
-                <element signature="e#18030#18098#1" />
               </folding>
             </state>
           </provider>
@@ -302,7 +284,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14239483" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15210356" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -616,8 +598,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/views/main_view.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -720,27 +702,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="1292">
+          <caret line="192" column="51" selection-start-line="192" selection-start-column="51" selection-end-line="192" selection-end-column="51" />
           <folding>
-            <element signature="method#EditorController#0;class#EditorController#0" />
-            <element signature="method#editorSettings#0;class#EditorController#0" />
-            <element signature="method#codeAreaHighlighter#0;class#EditorController#0" />
-            <element signature="e#2471#2747#0" />
-            <element signature="e#2517#2593#1" />
-            <element signature="e#2599#2729#1" />
-            <element signature="method#codeAreaAddLineNumber#0;class#EditorController#0" />
             <element signature="method#codeAreaMenuItems#0;class#EditorController#0" />
-            <element signature="method#computeHighlightingAsync#0;class#EditorController#0" />
             <element signature="method#applyHighlighting#0;class#EditorController#0" />
             <element signature="method#computeHighlighting#0;class#EditorController#0" />
             <element signature="e#5315#6653#1" />
-            <element signature="method#formatSourceCode#0;class#EditorController#0" />
             <element signature="e#6958#7229#0" />
             <element signature="e#7116#7219#1" />
             <element signature="e#7264#7606#0" />
             <element signature="e#7454#7535#1" />
-            <element signature="method#saveSourceCode#0;class#EditorController#0" />
             <element signature="e#7754#7828#1" />
             <element signature="e#7834#8224#1" />
             <element signature="e#8061#8212#0" />
@@ -772,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="384" column="9" lean-forward="true" selection-start-line="384" selection-start-column="9" selection-end-line="384" selection-end-column="9" />
+        <state relative-caret-position="646">
+          <caret line="420" column="31" selection-start-line="420" selection-start-column="31" selection-end-line="420" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3181#3989#0" />
@@ -812,20 +784,12 @@
             <element signature="e#12365#12924#0" />
             <element signature="e#12761#12918#1" />
             <element signature="e#12851#12908#1" />
+            <element signature="e#12930#14307#0" />
             <element signature="e#13791#13939#0" />
             <element signature="e#14313#15439#0" />
             <element signature="e#14611#15143#0" />
             <element signature="e#14985#15131#0" />
             <element signature="e#15166#15433#0" />
-            <element signature="e#16134#16655#0" />
-            <element signature="e#16307#16454#1" />
-            <element signature="e#16502#16649#1" />
-            <element signature="e#16717#17035#0" />
-            <element signature="e#16794#17029#1" />
-            <element signature="e#16857#17019#1" />
-            <element signature="e#17892#18523#0" />
-            <element signature="e#17981#18517#1" />
-            <element signature="e#18030#18098#1" />
           </folding>
         </state>
       </provider>
