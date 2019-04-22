@@ -34,6 +34,6 @@ public class AutoComplete {
     }
 
     private static List<String> getQuerySuggestions(String query) {
-        return SyntaxUtils.KEYWORDS_lIST.parallelStream().filter(e -> e.startsWith(query)).collect(Collectors.toList());
+        return SyntaxUtils.KEYWORDS_lIST.parallelStream().filter(keyword -> keyword.startsWith(query)).collect(Collectors.toList());
     }
 }
