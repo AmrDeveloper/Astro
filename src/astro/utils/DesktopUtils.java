@@ -1,5 +1,7 @@
 package astro.utils;
 
+import astro.ui.DialogUtils;
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -13,10 +15,9 @@ public class DesktopUtils {
         Desktop desktop = Desktop.getDesktop();
         try {
             desktop.open(directory);
-        } catch (IllegalArgumentException iae) {
-            System.out.println("File Not Found");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IllegalArgumentException | IOException e) {
+            String errorMessage = "File Not Found";
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
         }
     }
 }
