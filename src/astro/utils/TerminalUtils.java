@@ -11,95 +11,77 @@ public class TerminalUtils {
     private static final String DEBUG_TAG = TerminalUtils.class.getSimpleName();
     private static final Logger debug = Logger.getLogger(DEBUG_TAG);
 
-    public static int openTerminal() {
+    public static void openTerminal() {
         if (OSValidator.isWindows()) {
-            return openWindowsTerminal();
+            openWindowsTerminal();
         } else if (OSValidator.isUnix()) {
-            return openUnixTerminal();
+            openUnixTerminal();
         }
-        return -1;
     }
 
-    public static int openTerminalHere(File file) {
+    public static void openTerminalHere(File file) {
         if (OSValidator.isWindows()) {
-            return openWindowsTerminalHere(file);
+            openWindowsTerminalHere(file);
         } else if (OSValidator.isUnix()) {
-            return openUnixTerminalHere(file);
+            openUnixTerminalHere(file);
         }
-        return -1;
     }
 
-    /**
-     * @return : 0 if windows terminal is opened without errors
-     */
-    private static int openWindowsTerminal() {
+    private static void openWindowsTerminal() {
         try {
             Runtime runtime = Runtime.getRuntime();
             runtime.exec("cmd.exe /c start", null);
-            return 0;
         } catch (IOException e) {
             final String errorMessage = "Can't Launch Windows Terminal";
             //Debugging Console
             debug.warning(errorMessage);
             //Warning UI
-            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
-            return 1;
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG, null, errorMessage);
         }
     }
 
     /**
      * @param file : open windows terminal in file path
-     * @return : 0 if terminal is opened without errors
      */
-    private static int openWindowsTerminalHere(File file) {
+    private static void openWindowsTerminalHere(File file) {
         try {
             Runtime runtime = Runtime.getRuntime();
             runtime.exec("cmd.exe /c start", null, file);
-            return 0;
         } catch (IOException e) {
             final String errorMessage = "Can't Launch Windows Terminal Here";
             //Debugging Console
             debug.warning(errorMessage);
             //Warning UI
-            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
-            return 1;
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG, null, errorMessage);
         }
     }
 
-    /**
-     * @return : 0 if Unix terminal is opened without errors
-     */
-    private static int openUnixTerminal() {
+    private static void openUnixTerminal() {
         try {
             Runtime runtime = Runtime.getRuntime();
             runtime.exec("bash -c start", null);
-            return 0;
         } catch (IOException e) {
             final String errorMessage = "Can't Launch Unix Based Terminal";
             //Debugging Console
             debug.warning(errorMessage);
             //Warning UI
-            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
-            return 1;
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG, null, errorMessage);
         }
     }
 
     /**
      * @param file : open Unix terminal in file path
-     * @return : 0 if terminal is opened without errors
      */
-    private static int openUnixTerminalHere(File file) {
+    private static void openUnixTerminalHere(File file) {
         try {
             Runtime runtime = Runtime.getRuntime();
             runtime.exec("bash -c start", null, file);
-            return 0;
         } catch (IOException e) {
             final String errorMessage = "Can't Launch Unix Based Terminal Here";
             //Debugging Console
             debug.warning(errorMessage);
             //Warning UI
-            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG,null,errorMessage);
-            return 1;
+            DialogUtils.createErrorDialog(DialogUtils.ERROR_DIALOG, null, errorMessage);
         }
     }
 }
