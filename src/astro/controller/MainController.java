@@ -440,4 +440,8 @@ public class MainController implements Initializable {
             projectWatcherService = FileService.setFileService(filesTreeView, sourceFolder);
         }
     }
+
+    public static MainController getController() {
+        return mainController;
+    }
 }

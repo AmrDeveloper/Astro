@@ -65,7 +65,7 @@ public class NewProjectController implements Initializable {
         File projectDir = FileManager.createNewFolder(projectFullPath);
         File projectSrc = FileManager.createNewFolder(projectSrcPath);
 
-        MainController.mainController.updateFilesTreeView(projectDir);
+        MainController.getController().updateFilesTreeView(projectDir);
 
         cancelButtonAction();
     }

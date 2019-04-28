@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4867ac88-abff-44fe-9bc3-1e72eca9094c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,13 +16,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="727">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="93" column="123" lean-forward="true" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="123" />
+            <state relative-caret-position="710">
+              <caret line="446" column="1" lean-forward="true" selection-start-line="446" selection-start-column="1" selection-end-line="446" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3181#3989#0" />
+                <element signature="e#3995#4325#0" />
                 <element signature="e#4331#4489#0" />
                 <element signature="e#4495#5237#0" />
                 <element signature="e#5243#6958#0" />
@@ -57,21 +72,15 @@
                 <element signature="e#12930#14307#0" />
                 <element signature="e#13791#13939#0" />
                 <element signature="e#14313#15439#0" />
-                <element signature="e#14611#15143#0" />
                 <element signature="e#14985#15131#0" />
                 <element signature="e#15166#15433#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/astro/constants/Icons.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="127" lean-forward="true" selection-start-line="8" selection-start-column="127" selection-end-line="8" selection-end-column="127" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#15445#16146#0" />
+                <element signature="e#16152#16673#0" />
+                <element signature="e#16735#17053#0" />
+                <element signature="e#17199#17899#0" />
+                <element signature="e#17906#18537#0" />
+                <element signature="e#18588#18589#0" expanded="true" />
+                <element signature="e#18625#18626#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/astro/utils/FileManager.java" />
         <option value="$PROJECT_DIR$/src/astro/ui/DialogUtils.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/ScreenCapture.java" />
-        <option value="$PROJECT_DIR$/src/astro/utils/TerminalUtils.java" />
         <option value="$PROJECT_DIR$/src/astro/styles/editor_style.css" />
         <option value="$PROJECT_DIR$/src/astro/syntax/SpaceSensors.java" />
         <option value="$PROJECT_DIR$/src/astro/executor/Executor.java" />
@@ -124,14 +132,16 @@
         <option value="$PROJECT_DIR$/src/astro/utils/Intent.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewClassController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewFileController.java" />
-        <option value="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
         <option value="$PROJECT_DIR$/src/astro/constants/Extension.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/AutoComplete.java" />
         <option value="$PROJECT_DIR$/src/astro/syntax/Keywords.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/DesktopUtils.java" />
+        <option value="$PROJECT_DIR$/src/astro/constants/Icons.java" />
+        <option value="$PROJECT_DIR$/src/astro/utils/TerminalUtils.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/NewProjectController.java" />
       </list>
     </option>
   </component>
@@ -152,7 +162,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,12 +185,13 @@
               <item name="Astro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="astro" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -251,7 +261,7 @@
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1723301" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1723301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,16 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="1070" column="16" selection-start-line="1070" selection-start-column="16" selection-end-line="1070" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/utils/TerminalUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="96" column="78" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,16 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewFileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -532,16 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="948">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/service/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-412">
@@ -566,16 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewClassController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,13 +665,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/constants/Icons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="127" selection-start-line="8" selection-start-column="127" selection-end-line="8" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/utils/TerminalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/google-java-format-1.6-all-deps.jar!/com/google/common/io/Files.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="210" column="31" selection-start-line="210" selection-start-column="31" selection-end-line="210" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewFileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/NewProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="93" column="123" lean-forward="true" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="123" />
+        <state relative-caret-position="710">
+          <caret line="446" column="1" lean-forward="true" selection-start-line="446" selection-start-column="1" selection-end-line="446" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3181#3989#0" />
+            <element signature="e#3995#4325#0" />
             <element signature="e#4331#4489#0" />
             <element signature="e#4495#5237#0" />
             <element signature="e#5243#6958#0" />
@@ -738,19 +766,15 @@
             <element signature="e#12930#14307#0" />
             <element signature="e#13791#13939#0" />
             <element signature="e#14313#15439#0" />
-            <element signature="e#14611#15143#0" />
             <element signature="e#14985#15131#0" />
             <element signature="e#15166#15433#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/constants/Icons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="127" lean-forward="true" selection-start-line="8" selection-start-column="127" selection-end-line="8" selection-end-column="127" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#15445#16146#0" />
+            <element signature="e#16152#16673#0" />
+            <element signature="e#16735#17053#0" />
+            <element signature="e#17199#17899#0" />
+            <element signature="e#17906#18537#0" />
+            <element signature="e#18588#18589#0" expanded="true" />
+            <element signature="e#18625#18626#0" expanded="true" />
           </folding>
         </state>
       </provider>
