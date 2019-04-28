@@ -53,4 +53,8 @@ public class NewFileController implements Initializable {
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
     }
+
+    public static NewFileController getController(){
+        return fileController;
+    }
 }
