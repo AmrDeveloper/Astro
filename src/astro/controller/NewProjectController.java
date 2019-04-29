@@ -65,7 +65,7 @@ public class NewProjectController implements Initializable {
         File projectDir = FileManager.createNewFolder(projectFullPath);
         File projectSrc = FileManager.createNewFolder(projectSrcPath);
 
-        MainController.getController().updateFilesTreeView(projectDir);
+        MainController.getInstance().updateFilesTreeView(projectDir);
 
         cancelButtonAction();
     }
@@ -75,7 +75,7 @@ public class NewProjectController implements Initializable {
         stage.close();
     }
 
-    public static NewProjectController getController(){
+    public static NewProjectController getInstance(){
         return projectController;
     }
 }

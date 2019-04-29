@@ -441,7 +441,7 @@ public class MainController implements Initializable {
         }
     }
 
-    public static MainController getController() {
+    public static MainController getInstance() {
         return mainController;
     }
 }

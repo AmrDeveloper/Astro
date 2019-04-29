@@ -72,7 +72,7 @@ public class NewClassController implements Initializable {
         stage.close();
     }
 
-    public static NewClassController getController(){
+    public static NewClassController getInstance(){
         return classController;
     }
 }

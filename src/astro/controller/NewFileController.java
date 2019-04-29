@@ -54,7 +54,7 @@ public class NewFileController implements Initializable {
         stage.close();
     }
 
-    public static NewFileController getController(){
+    public static NewFileController getInstance(){
         return fileController;
     }
 }
