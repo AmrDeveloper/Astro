@@ -74,4 +74,8 @@ public class NewProjectController implements Initializable {
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
     }
+
+    public static NewProjectController getController(){
+        return projectController;
+    }
 }
