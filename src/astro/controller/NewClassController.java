@@ -1,6 +1,7 @@
 package astro.controller;
 
 import astro.constants.ClassKind;
+import astro.constants.Extension;
 import astro.ui.DialogUtils;
 import astro.utils.ClassManager;
 import astro.utils.FileManager;
@@ -56,7 +57,7 @@ public class NewClassController implements Initializable {
             return;
         }
 
-        String fullClassName = (className.endsWith(".java")) ? className : className.concat(".java");
+        String fullClassName = (className.endsWith(Extension.JAVA)) ? className : className.concat(Extension.JAVA);
         String newClassPath = directoryPath.concat(File.separator).concat(fullClassName);
 
         File source = FileManager.createNewFile(newClassPath);
