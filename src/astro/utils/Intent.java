@@ -15,8 +15,8 @@ import java.util.logging.Logger;
 public class Intent extends IntentStorage {
 
     private static Intent mIntent;
-    private Logger debug = Logger.getLogger(DEBUG_TAG);
     private static final String DEBUG_TAG = Intent.class.getSimpleName();
+    private static final Logger debug = Logger.getLogger(DEBUG_TAG);
 
     @Nonnull
     synchronized public static Intent getIntent() {
