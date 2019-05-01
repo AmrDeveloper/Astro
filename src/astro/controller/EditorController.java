@@ -72,11 +72,11 @@ class EditorController {
                 .successionEnds(Duration.ofMillis(500))
                 .supplyTask(this::computeHighlightingAsync)
                 .awaitLatest(codeTextArea.multiPlainChanges())
-                .filterMap(t -> {
-                    if (t.isSuccess()) {
-                        return Optional.of(t.get());
+                .filterMap(tryTask -> {
+                    if (tryTask.isSuccess()) {
+                        return Optional.of(tryTask.get());
                     } else {
-                        t.getFailure().printStackTrace();
+                        tryTask.getFailure().printStackTrace();
                         return Optional.empty();
                     }
                 })
