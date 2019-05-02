@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da52b667-ec58-4f1a-a5ae-2409f74151d6" name="Default Changelist" comment="" />
+    <list default="true" id="da52b667-ec58-4f1a-a5ae-2409f74151d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +12,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +35,7 @@
         <option value="$PROJECT_DIR$/src/astro/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/astro/controller/NewClassController.java" />
         <option value="$PROJECT_DIR$/src/astro/utils/Intent.java" />
+        <option value="$PROJECT_DIR$/src/astro/controller/EditorController.java" />
       </list>
     </option>
   </component>
@@ -37,6 +50,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -56,11 +70,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="astro" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Astro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Astro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="astro" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -90,8 +110,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1658576" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17313915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -156,13 +177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3458">
-          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/astro/utils/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -191,6 +205,13 @@
             <element signature="e#18586#18587#0" expanded="true" />
             <element signature="e#18623#18624#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/astro/controller/EditorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="113" column="41" lean-forward="true" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
         </state>
       </provider>
     </entry>

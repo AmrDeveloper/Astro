@@ -323,8 +323,8 @@ public class MainController implements Initializable {
         javaTab.setGraphic(ImageUtils.buildImageView(Icons.codeIconImage));
 
         CodeArea codeTextArea = new CodeArea();
-        EditorController editorController1 = new EditorController(codeTextArea, resultTextArea);
-        editorController1.editorSettings();
+        EditorController editorController = new EditorController(codeTextArea, resultTextArea);
+        editorController.editorSettings();
 
         try {
             StringBuilder code = new StringBuilder();
@@ -336,7 +336,7 @@ public class MainController implements Initializable {
                 codeAreaLayout.getTabs().add(javaTab);
                 openedFilesList.getItems().add(new Source(sourceFile));
             });
-            editorController1.updateSourceFile(sourceFile);
+            editorController.updateSourceFile(sourceFile);
         } catch (IOException e) {
             String warnMessage = "Can't Open File in Tab pane";
             //Debugging warning
