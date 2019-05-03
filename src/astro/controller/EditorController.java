@@ -57,7 +57,7 @@ class EditorController {
     void editorSettings() {
         codeAreaHighlighter();
         codeAreaAddLineNumber();
-        codeAreaMenuItems();
+        bindContextMenu();
 
         //Event Listener
         codeTextArea.setOnKeyTyped(onKeyTyped);
@@ -88,7 +88,7 @@ class EditorController {
         codeTextArea.setParagraphGraphicFactory(lineNumberFactory);
     }
 
-    private void codeAreaMenuItems() {
+    private ContextMenu getContextMenu() {
         //Create Menu Items
         MenuItem run = new MenuItem("Run");
         MenuItem format = new MenuItem("Format");
@@ -116,8 +116,12 @@ class EditorController {
         contextMenu.getItems().add(openTerminal);
         contextMenu.getItems().add(openTerminalHere);
         contextMenu.getItems().add(screenShot);
+        
+        return contextMenu;
+    }
 
-        //Add Context Menu to CodeArea
+    private void bindContextMenu(){
+        ContextMenu contextMenu = getContextMenu();
         codeTextArea.setContextMenu(contextMenu);
     }
 
